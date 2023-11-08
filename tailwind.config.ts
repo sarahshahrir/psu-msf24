@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import React, { ReactNode } from "react";
+
 const plugin = require("tailwindcss/plugin");
 const flattenColorPalette = require("tailwindcss/src/util/flattenColorPalette");
 const toColorValue = require("tailwindcss/src/util/toColorValue");
