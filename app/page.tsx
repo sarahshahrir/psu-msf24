@@ -14,6 +14,10 @@ export default function Home() {
         loop
         autoPlay
         muted
+        defaultMuted
+        playsinline
+        oncontextmenu="return false;"
+        preload="auto"
       />
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
         <Image src={mysa} alt="Picture of the author" width={80} height={80} />
