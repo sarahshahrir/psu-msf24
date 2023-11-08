@@ -14,8 +14,8 @@ export default function Home() {
         loop
         autoPlay
         muted
-        playsinline
-        oncontextmenu="return false;"
+        playsInline
+        onContextMenu="return false;"
         preload="auto"
       />
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
