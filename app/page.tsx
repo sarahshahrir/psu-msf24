@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center md:p-24 px-4 gap-6 py-4 ">
+    <main className="flex h-[100vh] flex-col items-center justify-center md:p-24 px-4 gap-6 py-4 ">
       <video
         src="https://res.cloudinary.com/dx0kyrggg/video/upload/v1699460136/These_are_Our_Values_UW-Madison_commercial_n3bahb.mp4"
         loop

@@ -89,6 +89,6 @@ video {
   /* filter: grayscale(0.6); */
   z-index: -1;
   /*additional tweaks for positioning, read more in the link above*/
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vh;
 }
