@@ -17,7 +17,7 @@ export default function Home() {
         playsInline
         preload="auto"
       />
-      <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
+      <div className="flex items-center gap-2 translate-x-[-10px]  md:translate-y-3 translate-y-[-60px]">
         <Image src={mysa} alt="Picture of the author" width={80} height={80} />
         <Image
           className="rounded-full"
@@ -28,13 +28,13 @@ export default function Home() {
         />
       </div>
 
-      <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] font-extrabold text-6xl">
+      <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] font-extrabold text-6xl md:translate-y-0 translate-y-[-60px]">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         MSF 23'
       </h1>
 
       {/* details */}
-      <div className="flex items-center justify-center md:gap-5 gap-2 ">
+      <div className="flex items-center justify-center md:gap-5 gap-2 md:translate-y-0 translate-y-[-60px]">
         <h1 className="text-border-white text-border-size-1 text-white text-sm md:text-2xl font-extrabold ">
           UW-Madison
         </h1>
@@ -58,9 +58,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <Button className="fixed bottom-12" variant="outline">
+      <Button className="fixed bottom-12" variant="outline">
         <Link href="/fixtures">View fixtures</Link>
-      </Button> */}
+      </Button>
     </main>
   );
 }
