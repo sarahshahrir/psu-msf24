@@ -2,6 +2,15 @@
 const plugin = require("tailwindcss/plugin");
 const flattenColorPalette = require("tailwindcss/src/util/flattenColorPalette");
 const toColorValue = require("tailwindcss/src/util/toColorValue");
+
+interface Props {
+  matchUtilities?: ReactNode;
+  e?: ReactNode;
+  config?: ReactNode;
+  theme?: ReactNode;
+  // any props that come into the component
+}
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -77,7 +86,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    plugin(function ({ matchUtilities, e, config, theme }) {
+    plugin(function ({ matchUtilities, e, config, theme }: Props) {
       const textBorderSize = `--tw${config("prefix")}-text-border-size`;
 
       matchUtilities(
