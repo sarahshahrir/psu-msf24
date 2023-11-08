@@ -90,6 +90,5 @@ video {
   z-index: -1;
   /*additional tweaks for positioning, read more in the link above*/
   height: 100%;
-  min-width: 100%;
-  min-height: 56.25vw; /* 100 * 9 / 16 */
+  width: 100%;
 }
