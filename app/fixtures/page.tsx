@@ -28,7 +28,7 @@ export default function Fixture() {
         <h1 className="text-border-white text-border-size-1 text-white text-sm md:text-2xl font-extrabold ">
           UW-Madison
         </h1>
-        <div class="inline-block h-[30px]  w-0.5 self-stretch bg-slate-600 opacity-100 dark:opacity-50"></div>
+        <div className="inline-block h-[30px]  w-0.5 self-stretch bg-slate-600 opacity-100 dark:opacity-50"></div>
         <div className="flex items-center md:gap-3 gap-1 ">
           <h1 className="text-border-white text-border-size-1 text-white text-sm md:text-2xl font-extrabold ">
             11-12
@@ -37,7 +37,7 @@ export default function Fixture() {
             Nov
           </h1>
         </div>
-        <div class="inline-block h-[30px] w-0.5 self-stretch bg-slate-600  opacity-100 dark:opacity-50"></div>
+        <div className="inline-block h-[30px] w-0.5 self-stretch bg-slate-600  opacity-100 dark:opacity-50"></div>
         <div className="flex items-center md:gap-3 gap-1">
           <h1 className="text-border-white text-border-size-1 text-white text-sm md:text-2xl font-extrabold">
             15
