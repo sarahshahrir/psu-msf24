@@ -15,7 +15,7 @@ export default function Home() {
         autoPlay
         muted
         playsInline
-        onContextMenu="return false;"
+        onContextMenu={(event) => event.preventDefault()}
         preload="auto"
       />
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
