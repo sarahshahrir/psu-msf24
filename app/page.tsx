@@ -17,7 +17,7 @@ export default function Home() {
         playsInline
         preload="auto"
       />
-      <div className="flex items-center gap-2 translate-x-[-10px]  md:translate-y-3 translate-y-[-40px]">
+      <div className="flex items-center gap-2 translate-x-[-10px]  md:translate-y-3 translate-y-[-50px]">
         <Image src={mysa} alt="Picture of the author" width={80} height={80} />
         <Image
           className="rounded-full"
