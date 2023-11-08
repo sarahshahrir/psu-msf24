@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-import React, { Any } from "react";
+import React, { ReactNode } from "react";
 
 const plugin = require("tailwindcss/plugin");
 const flattenColorPalette = require("tailwindcss/src/util/flattenColorPalette");
 const toColorValue = require("tailwindcss/src/util/toColorValue");
 
 interface Props {
-  matchUtilities?: Any;
-  e?: Any;
-  config?: Any;
-  theme?: Any;
+  matchUtilities?: ReactNode;
+  e?: ReactNode;
+  config?: ReactNode;
+  theme?: ReactNode;
   // any props that come into the component
 }
 
