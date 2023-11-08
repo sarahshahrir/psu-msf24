@@ -4,17 +4,10 @@ import namsa from "@/public/namsa.jpeg";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
 
-export default function Home() {
+export default function Fixture() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center md:p-24 px-4 gap-6 py-4 ">
-      <video
-        src="https://res.cloudinary.com/dx0kyrggg/video/upload/v1699460136/These_are_Our_Values_UW-Madison_commercial_n3bahb.mp4"
-        loop
-        autoPlay
-        muted
-      />
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
         <Image src={mysa} alt="Picture of the author" width={80} height={80} />
         <Image
@@ -55,7 +48,7 @@ export default function Home() {
       </div>
 
       <Button className="fixed bottom-12" variant="outline">
-        <Link href="/fixtures">View fixtures</Link>
+        View fixtures
       </Button>
     </main>
   );
