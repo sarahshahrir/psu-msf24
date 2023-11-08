@@ -25,7 +25,9 @@ export default function Home() {
           height={50}
         />
       </div>
+
       <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] font-extrabold text-6xl">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         MSF 23'
       </h1>
 
