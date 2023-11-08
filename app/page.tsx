@@ -9,14 +9,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex h-[100vh] flex-col items-center justify-center md:p-24 px-4 gap-6 py-4 ">
-      {/* <video
+      <video
         src="https://res.cloudinary.com/dx0kyrggg/video/upload/v1699460136/These_are_Our_Values_UW-Madison_commercial_n3bahb.mp4"
         loop
         autoPlay
         muted
         playsInline
         preload="auto"
-      /> */}
+      />
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
         <Image src={mysa} alt="Picture of the author" width={80} height={80} />
         <Image
@@ -58,9 +58,9 @@ export default function Home() {
         </div>
       </div>
 
-      <Button className="fixed bottom-12" variant="outline">
+      {/* <Button className="fixed bottom-12" variant="outline">
         <Link href="/fixtures">View fixtures</Link>
-      </Button>
+      </Button> */}
     </main>
   );
 }
