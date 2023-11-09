@@ -3,10 +3,6 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
-interface Props {
-  data: any;
-}
-
 if (typeof window !== "undefined" && typeof window.navigator !== "undefined") {
   import("@g-loot/react-tournament-brackets");
 }
@@ -68,13 +64,13 @@ const createTheme = dynamic(
 //   svgBackground: "#FAFAFA",
 // });
 
-export const Brackets = ({ data }: Props) => {
+export const Brackets = ({ data }) => {
   const finalWidth = 500;
   const finalHeight = 500;
 
   return (
     <SingleEliminationBracket
-      className="overflow-x-scroll ml-4 "
+      className="ml-4 overflow-x-scroll "
       matches={data}
       matchComponent={Match}
       options={{
