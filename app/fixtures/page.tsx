@@ -23,7 +23,12 @@ const index = ["1", "2", "3", "4"];
 // [[team1, team2, date, time, venue]]
 // team1 is string, team2 is string, date should be in Nov 1, time should be in 8:00 AM
 // everything in stringx
-const matchDetails = {
+
+interface ObjectType {
+  [key: string]: string[][];
+}
+
+const matchDetails: ObjectType = {
   Football: [
     ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group"],
     ["Illinois", "NSP", "Nov 11", "9:40 AM", "Group"],
@@ -93,7 +98,7 @@ export default function Fixture() {
         </TabsList>
         <TabsContent value="Matches">
           {/* loop through matchDetails */}
-          {matchDetails[sport].map((matchDetail, index) => (
+          {matchDetails[sport as keyof ObjectType].map((matchDetail, index) => (
             <Matches
               className="duration-100 fade-in-10"
               key={index}
