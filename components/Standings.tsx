@@ -6,7 +6,7 @@ interface Props {
   teams: string[];
   scores: string[];
   goals?: string[];
-  nums: number[];
+  nums: string[];
 }
 export const Standings = ({ title, teams, scores, nums }: Props) => {
   return (
