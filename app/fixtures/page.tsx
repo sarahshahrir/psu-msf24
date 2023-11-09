@@ -100,7 +100,6 @@ export default function Fixture() {
           {/* loop through matchDetails */}
           {matchDetails[sport as keyof ObjectType].map((matchDetail, index) => (
             <Matches
-              className="duration-100 fade-in-10"
               key={index}
               team1={matchDetail[0]}
               team2={matchDetail[1]}
