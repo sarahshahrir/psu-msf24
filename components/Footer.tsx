@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import basketball from "@/public/basketball.png";
 import badminton from "@/public/badminton.png";
@@ -10,7 +9,7 @@ import outdoor from "@/public/outdoor.png";
 
 export const Footer = () => {
   return (
-    <div className="flex items-center gap-4 fixed bottom-8">
+    <div className="fixed flex items-center gap-4 bottom-8">
       <Button variant="outline">
         <Image
           src={football}
