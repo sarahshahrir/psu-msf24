@@ -23,10 +23,10 @@ export const Matches = ({ team1, team2, date, time }: Props) => {
       />
 
       {/* Date */}
-      <di className="flex flex-col items-center justify-center text-xs font-semibold text-center ">
+      <div className="flex flex-col items-center justify-center text-xs font-semibold text-center ">
         <p>{date}</p>
         <p>{time}</p>
-      </di>
+      </div>
     </div>
   );
 };
