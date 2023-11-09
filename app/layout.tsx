@@ -4,6 +4,8 @@ import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 
+import RecoilRootWrapper from "@/app/recoil";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,9 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Theme>
-        <body className={inter.className}>{children}</body>
-      </Theme>
+      <RecoilRootWrapper>
+        <Theme>
+          <body className={inter.className}>{children}</body>
+        </Theme>
+      </RecoilRootWrapper>
     </html>
   );
 }
