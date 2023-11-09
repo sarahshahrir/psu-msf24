@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Button className="fixed bottom-12" variant="outline">
+      <Button className="fixed bottom-8" variant="outline">
         <Link href="/fixtures">View fixtures</Link>
       </Button>
     </main>
