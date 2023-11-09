@@ -7,7 +7,7 @@ interface Props {
   date: string;
   time: string;
 }
-export const Matches = ({ team1, team2, date, time }) => {
+export const Matches = ({ team1, team2, date, time }: Props) => {
   return (
     <div className="relative p-4 border h-[90px] border-slate-400 items-center min-w-[320px] rounded-md grid grid-cols-3 gap-4">
       {/* Team */}
@@ -19,11 +19,11 @@ export const Matches = ({ team1, team2, date, time }) => {
       {/* Separator */}
       <Separator
         orientation="vertical"
-        className="absolute top-0 right-28 bg-slate-500 h-10 translate-y-6"
+        className="absolute top-0 h-10 translate-y-6 right-28 bg-slate-500"
       />
 
       {/* Date */}
-      <di className="flex flex-col text-xs font-semibold text-center items-center justify-center ">
+      <di className="flex flex-col items-center justify-center text-xs font-semibold text-center ">
         <p>{date}</p>
         <p>{time}</p>
       </di>

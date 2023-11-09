@@ -8,11 +8,11 @@ interface Props {
   goals?: string[];
   nums: number[];
 }
-export const Standings = ({ title, teams, scores, nums }) => {
+export const Standings = ({ title, teams, scores, nums }: Props) => {
   return (
     <div className="relative border  border-slate-400 items-center min-w-[320px] flex flex-col  ">
       {/* Title */}
-      <div className="flex flex-center items-center justify-center text-lg font-bold text-white bg-red-600 w-full p-4">
+      <div className="flex items-center justify-center w-full p-4 text-lg font-bold text-white bg-red-600 flex-center">
         <p>{title}</p>
       </div>
 
@@ -21,7 +21,7 @@ export const Standings = ({ title, teams, scores, nums }) => {
       {teams.map((team, index) => (
         <div
           key={index}
-          className="flex flex-center items-center justify-between text-lg  text-black  w-full p-4"
+          className="flex items-center justify-between w-full p-4 text-lg text-black flex-center"
         >
           <div className="flex items-center gap-3">
             <p className="font-thin">{nums[index]}</p>
