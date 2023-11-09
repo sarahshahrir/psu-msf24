@@ -17,7 +17,7 @@ type Match = {
 
   state: "PLAYED" | "NO_SHOW" | "WALK_OVER" | "NO_PARTY" | string;
 
-  participants: Participant[];
+  participants: any[];
 
   [key: string]: any;
 };
