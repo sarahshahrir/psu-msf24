@@ -13,7 +13,7 @@ export const Footer = () => {
   const [sport, setSport] = useRecoilState(sportState);
 
   return (
-    <div className="fixed flex items-center gap-4 bottom-8">
+    <div className="fixed flex items-center gap-3 bottom-8">
       <Button
         // write conditional statement for classname in tailwind
         className={`${
