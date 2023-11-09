@@ -61,8 +61,19 @@ const matchDetails: ObjectType = {
     ["ccc", "ddd", "Nov 1", "8:00 AM", "Court A"],
   ],
   Basketball: [
-    ["aaa", "bbb", "Nov 1", "8:00 AM", "Court A"],
-    ["ccc", "ddd", "Nov 1", "8:00 AM", "Court A"],
+    ["UW Badgers", "Swish Kebabs", "Nov 11", "12:00 PM", "Court 5"],
+    ["Free Agent 1", "Free Agent 2", "Nov 11", "12:00 PM", "Court 6"],
+    ["Cendol VB", "Illinois", "Nov 11", "12:40 PM", "Court 5"],
+    ["OSU Buckeyes", "Free Agent 2", "Nov 11", "12:40 PM", "Court 6"],
+    ["Free Agent 2", "Cendol VB", "Nov 11", "1:20 PM", "Court 5"],
+    ["OSU Buckeyes", "Free Agent 1", "Nov 11", "1:20 PM", "Court 6"],
+    ["Free Agent 1", "Illinois", "Nov 11", "2:00 PM", "Court 5"],
+    ["Cendol VB", "OSU Buckeyes", "Nov 11", "5:30 PM", "Court 5"],
+    ["Free Agent 1", "Cendol VB", "Nov 11", "6:10 PM", "Court 5"],
+    ["Illinois", "Free Agent 2", "Nov 11", "6:10 PM", "Court 6"],
+    ["Cendol VB", "OSU Buckeyes", "Nov 11", "5:30 PM", "Court 5"],
+    ["Free Agent 1", "Cendol VB", "Nov 11", "6:10 PM", "Court 5"],
+    ["Illinois", "Free Agent 2", "Nov 11", "6:10 PM", "Court 6"],
   ],
   Sukaneka: [
     ["aaa", "bbb", "Nov 1", "8:00 AM", "Court A"],
@@ -73,7 +84,7 @@ const matchDetails: ObjectType = {
 export default function Fixture() {
   const [sport, setSport] = useRecoilState(sportState);
   return (
-    <main className="flex flex-col items-center min-h-screen gap-6 px-4 py-8 md:p-24 ">
+    <main className="flex flex-col items-center min-h-screen gap-6 px-4 py-8 pb-32 md:p-24 ">
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
         <Image src={mysa} alt="Picture of the author" width={60} height={60} />
         <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] font-extrabold text-3xl">
