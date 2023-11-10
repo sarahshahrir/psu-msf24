@@ -1,13 +1,13 @@
-type Match = {
+export type Match = {
   id: number | string;
 
   /** Link to this match. While onClick() can be used, providing an href
-        better supports opening a new tab, or copying a link. * */
+      better supports opening a new tab, or copying a link. * */
   href?: string;
 
   name?: string;
 
-  nextMatchId: number | string | null | undefined | any;
+  nextMatchId: number | string | null;
 
   nextLooserMatchId?: number | string;
 
@@ -17,7 +17,7 @@ type Match = {
 
   state: "PLAYED" | "NO_SHOW" | "WALK_OVER" | "NO_PARTY" | string;
 
-  participants: any[];
+  participants: Participant[];
 
   [key: string]: any;
 };
@@ -27,7 +27,7 @@ export const walkOverData: Match[] = [
     id: 260005,
     name: "Final - Match",
     nextMatchId: null,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "4",
     startTime: "2021-05-30",
     state: "SCHEDULED",
@@ -48,12 +48,11 @@ export const walkOverData: Match[] = [
       },
     ],
   },
-  ,
   {
     id: 260006,
     name: "Semi Final - Match 1",
     nextMatchId: 260005,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "3",
     startTime: "2021-05-30",
     state: "SCORE_DONE",
@@ -78,7 +77,7 @@ export const walkOverData: Match[] = [
     id: 260013,
     name: "Semi Final - Match 2",
     nextMatchId: 260005,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "3",
     startTime: "2021-05-30",
     state: "SCORE_DONE",
@@ -100,9 +99,9 @@ export const walkOverData: Match[] = [
   },
   {
     id: 260007,
-    name: "Quarter Finals - Match 1",
+    name: "Round 2 - Match 1",
     nextMatchId: 260006,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "2",
     startTime: "2021-05-30",
     state: "SCORE_DONE",
@@ -124,9 +123,9 @@ export const walkOverData: Match[] = [
   },
   {
     id: 260010,
-    name: "Quarter Finals - Match 2",
+    name: "Round 2 - Match 2",
     nextMatchId: 260006,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "2",
     startTime: "2021-05-30",
     state: "SCORE_DONE",
@@ -148,9 +147,9 @@ export const walkOverData: Match[] = [
   },
   {
     id: 260014,
-    name: "Quarter Finals - Match 3",
+    name: "Round 2 - Match 3",
     nextMatchId: 260013,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "2",
     startTime: "2021-05-30",
     state: "SCORE_DONE",
@@ -172,9 +171,9 @@ export const walkOverData: Match[] = [
   },
   {
     id: 260017,
-    name: "Quarter Finals - Match 4",
+    name: "Round 2 - Match 4",
     nextMatchId: 260013,
-    nextLooserMatchId: undefined,
+    nextLooserMatchId: null,
     tournamentRoundText: "2",
     startTime: "2021-05-30",
     state: "SCORE_DONE",
