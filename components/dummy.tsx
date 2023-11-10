@@ -7,7 +7,7 @@ type Match = {
 
   name?: string;
 
-  nextMatchId: number | string | null;
+  nextMatchId: number | string | null | undefined | any;
 
   nextLooserMatchId?: number | string;
 
@@ -28,7 +28,7 @@ export const walkOverData: Match[] = [
     name: "Final - Match",
     nextMatchId: null,
     nextLooserMatchId: undefined,
-    tournamentRoundText: "3",
+    tournamentRoundText: "4",
     startTime: "2021-05-30",
     state: "SCHEDULED",
     participants: [
