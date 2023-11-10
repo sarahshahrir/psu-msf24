@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import RecoilRootWrapper from "@/app/recoil";
 
@@ -22,7 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <RecoilRootWrapper>
         <Theme>
-          <body className={inter.className}>{children}</body>
+          <body className={inter.className}>
+            {children}
+            <Analytics />
+          </body>
         </Theme>
       </RecoilRootWrapper>
     </html>
