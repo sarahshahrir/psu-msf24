@@ -43,7 +43,7 @@ export const walkOverData: Match[] = [
     nextMatchId: null,
     nextLooserMatchId: undefined,
     tournamentRoundText: "4",
-    startTime: "2021-05-30",
+    startTime: "11-11-2023",
     state: "SCHEDULED",
     participants: [
       {
@@ -51,14 +51,12 @@ export const walkOverData: Match[] = [
         resultText: null,
         isWinner: false,
         status: null,
-        name: "giacomo123",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
         resultText: null,
         isWinner: false,
         status: null,
-        name: "Ant",
       },
     ],
   },
@@ -68,22 +66,20 @@ export const walkOverData: Match[] = [
     nextMatchId: 260005,
     nextLooserMatchId: undefined,
     tournamentRoundText: "3",
-    startTime: "2021-05-30",
-    state: "SCORE_DONE",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
         resultText: "1",
         isWinner: true,
         status: "PLAYED",
-        name: "giacomo123",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
         resultText: "0",
         isWinner: false,
         status: "PLAYED",
-        name: "TowbyTest",
       },
     ],
   },
@@ -93,7 +89,7 @@ export const walkOverData: Match[] = [
     nextMatchId: 260005,
     nextLooserMatchId: undefined,
     tournamentRoundText: "3",
-    startTime: "2021-05-30",
+    startTime: "11-11-2023",
     state: "SCORE_DONE",
     participants: [
       {
@@ -101,31 +97,29 @@ export const walkOverData: Match[] = [
         resultText: null,
         isWinner: false,
         status: "NO_SHOW",
-        name: "WubbaLubbaDubbish",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
         resultText: null,
         isWinner: true,
-        status: "WALK_OVER",
+        status: "PLAYED",
       },
     ],
   },
   {
     id: 260007,
-    name: "Round 2 - Match 1",
+    name: "Quarter Final - Match 1",
     nextMatchId: 260006,
     nextLooserMatchId: undefined,
     tournamentRoundText: "2",
-    startTime: "2021-05-30",
-    state: "SCORE_DONE",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
     participants: [
       {
         id: "1ec356ec-a7c4-4026-929b-3657286a92d8",
         resultText: "0",
         isWinner: false,
         status: "PLAYED",
-        name: "TestSpectacles",
       },
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
@@ -137,19 +131,18 @@ export const walkOverData: Match[] = [
   },
   {
     id: 260010,
-    name: "Round 2 - Match 2",
+    name: "Quarter Final - Match 2",
     nextMatchId: 260006,
     nextLooserMatchId: undefined,
     tournamentRoundText: "2",
-    startTime: "2021-05-30",
-    state: "SCORE_DONE",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
     participants: [
       {
         id: "c2f551b4-2d5a-4c59-86a8-df575805256a",
         resultText: "0",
         isWinner: false,
         status: "PLAYED",
-        name: "Ahshitherewegoagain",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
@@ -161,12 +154,12 @@ export const walkOverData: Match[] = [
   },
   {
     id: 260014,
-    name: "Round 2 - Match 3",
+    name: "Quarter Final - Match 3",
     nextMatchId: 260013,
     nextLooserMatchId: undefined,
     tournamentRoundText: "2",
-    startTime: "2021-05-30",
-    state: "SCORE_DONE",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
     participants: [
       {
         id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
@@ -179,18 +172,17 @@ export const walkOverData: Match[] = [
         resultText: "0",
         isWinner: false,
         status: "PLAYED",
-        name: "FIFA_MASTER",
       },
     ],
   },
   {
     id: 260017,
-    name: "Round 2 - Match 4",
+    name: "Quarter Final - Match 4",
     nextMatchId: 260013,
     nextLooserMatchId: undefined,
     tournamentRoundText: "2",
-    startTime: "2021-05-30",
-    state: "SCORE_DONE",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
     participants: [
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
@@ -203,7 +195,6 @@ export const walkOverData: Match[] = [
         resultText: "0",
         isWinner: false,
         status: "PLAYED",
-        name: "رئيس",
       },
     ],
   },
