@@ -28,7 +28,7 @@ export const walkOverData: Match[] = [
     name: "Final - Match",
     nextMatchId: null,
     nextLooserMatchId: undefined,
-    tournamentRoundText: "4",
+    tournamentRoundText: "3",
     startTime: "2021-05-30",
     state: "SCHEDULED",
     participants: [
@@ -48,6 +48,7 @@ export const walkOverData: Match[] = [
       },
     ],
   },
+  ,
   {
     id: 260006,
     name: "Semi Final - Match 1",

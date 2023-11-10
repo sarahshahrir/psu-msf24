@@ -28,6 +28,115 @@ interface ObjectType {
   [key: string]: string[][];
 }
 
+interface SportGroup {
+  [groupName: string]: Array<Array<string>>;
+}
+
+interface Group {
+  [group: string]: SportGroup;
+}
+
+const standingDetails: Group = {
+  Football: {
+    // every array represent a group and its point or score
+    "Group A": [
+      [
+        "MySA Badgers FC",
+        "Illinois",
+        "PMX FC",
+        "Ngauman Singa PennState (NSP)",
+      ],
+      ["0-0-0", "0-0-0", "0-0-0", "0-0-0"],
+    ],
+    "Group B": [
+      ["Ola Bola", "Gophers Cyclones FC", "Default Name"],
+      ["0-0-0", "0-0-0", "0-0-0"],
+    ],
+  },
+  Volleyball: {
+    // every array represent a group and its point or score
+    Teams: [
+      ["Cendol VB", "Illinois", "OSU Buckeyes", "Free Agent 1", "Free Agent 2"],
+      ["0-0", "0-0", "0-0", "0-0", "0-0"],
+    ],
+  },
+  Badminton: {
+    // every array represent a group and its point or score
+    "Group A": [
+      [
+        "H. W. Woo & A. Daniel",
+        "Aedan & JJ",
+        "Fiena & D. Suhaimi",
+        "J. Goh & J. Y. Tan",
+      ],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+    "Group B": [
+      [
+        "M.N. Azman & S. Hisham",
+        "Daksheshkaran & M. I. Ispandi",
+        "E. Victor & N. Razi",
+        "Taqio & M. N. Sharull",
+      ],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+    "Group C": [
+      [
+        "D. Hazeem & J. Yao",
+        "M. Naziem & P. D. Iskandar",
+        "A. Nadzri & A. Azman",
+        "M. H. Mohamad & K. Mustafar",
+      ],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+    "Group D": [
+      [
+        "H. E. Razif & J. Jesmani",
+        "W. A. Anaqi & Fikri",
+        "A. Chong & J. W. Chong",
+        "I. E. Ayob & T. Qistina",
+      ],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+  },
+  Basketball: {
+    // every array represent a group and its point or score
+    "Group A": [
+      ["UW Badgers", "Swish Kebabs", "Free Agents", "Powerpuff Mojos"],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+    "Group B": [
+      ["Penn State", "OSU Buckeyes", "Illinois"],
+      ["0-0", "0-0", "0-0"],
+    ],
+  },
+  Sukaneka: {
+    // every array represent a group and its point or score
+    // every array represent a group and its point or score
+    Dodgeball: [
+      ["Team A", "Team B", "Team C", "Team D"],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+    "Tarik Tali": [
+      ["Team A", "Team B", "Team C", "Team D"],
+      ["0-0", "0-0", "0-0", "0-0"],
+    ],
+    "Galah Panjang": [
+      [
+        "Team A1",
+        "Team B1",
+        "Team C1",
+        "Team D1",
+        "Team A2",
+        "Team B2",
+        "Team C2",
+        "Team D2",
+      ],
+      ["0-0", "0-0", "0-0", "0-0", "0-0", "0-0", "0-0", "0-0"],
+    ],
+  },
+};
+
 const matchDetails: ObjectType = {
   Football: [
     ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group"],
@@ -409,7 +518,7 @@ export default function Fixture() {
     <main className="flex flex-col items-center min-h-screen gap-6 px-4 py-8 pb-32 md:p-24 ">
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
         <Image src={mysa} alt="Picture of the author" width={60} height={60} />
-        <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] font-extrabold text-3xl">
+        <h1 className="text-border-white text-border-size-1 text-black md:text-[40px] font-extrabold text-3xl">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           MSF 23'
         </h1>
@@ -444,13 +553,20 @@ export default function Fixture() {
         </TabsContent>
         <TabsContent value="Standings">
           {" "}
-          <Standings
-            title="Group B"
-            teams={teams}
-            scores={scores}
-            nums={index}
-          />
-          <Brackets data={walkOverData} />
+          {/* Render all the standings */}
+          {Object.entries(standingDetails[sport as keyof ObjectType]).map(
+            ([group, matchDetails], index) => (
+              <Standings
+                key={index}
+                title={group}
+                teams={matchDetails[0]}
+                scores={matchDetails[1]}
+              />
+            )
+          )}
+          {(sport == "Football" ||
+            sport == "Basketball" ||
+            sport == "Badminton") && <Brackets data={walkOverData} />}
         </TabsContent>
       </Tabs>
 

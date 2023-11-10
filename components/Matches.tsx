@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
 import { Separator } from "@/components/ui/separator";
+import { useRecoilState } from "recoil";
+import { sportState } from "@/components/atoms";
 
 interface Props {
   team1: string;
@@ -11,13 +15,18 @@ interface Props {
   score2?: string;
 }
 export const Matches = ({ team1, team2, date, time, venue }: Props) => {
+  const [sport, setSport] = useRecoilState(sportState);
   return (
     <div className="relative p-4 border h-[90px] border-slate-400 items-center min-w-[320px] rounded-md grid grid-cols-3 gap-3 mb-4">
       {/* Team */}
 
       <div className="flex flex-col gap-1 min-w-[140px] col-span-2 text-sm">
-        <p>{team1}</p>
-        <p>{team2}</p>
+        <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
+          {team1}
+        </p>
+        <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
+          {team2}
+        </p>
       </div>
       {/* Separator */}
       <Separator
