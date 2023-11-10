@@ -1,4 +1,18 @@
-export type Match = {
+type Participant = {
+  id: string | number;
+
+  isWinner?: boolean;
+
+  name?: string;
+
+  status?: "PLAYED" | "NO_SHOW" | "WALK_OVER" | "NO_PARTY" | string | null;
+
+  resultText?: string | null;
+
+  [key: string]: any;
+};
+
+type Match = {
   id: number | string;
 
   /** Link to this match. While onClick() can be used, providing an href
