@@ -21,7 +21,6 @@ export default function Home() {
     const time = Date.parse(deadline) - Date.now();
 
     if (time <= 0) {
-      clearInterval(interval);
       return;
     }
 
