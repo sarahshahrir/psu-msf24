@@ -20,6 +20,10 @@ export default function Home() {
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
 
+    if (time <= 0) {
+      return;
+    }
+
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMinutes(Math.floor((time / 1000 / 60) % 60));
@@ -27,11 +31,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const time = Date.parse(deadline) - Date.now();
-
-    if (time > 0) {
-      const interval = setInterval(() => getTime(deadline), 1000);
-    }
+    const interval = setInterval(() => getTime(), 1000);
 
     return () => clearInterval(interval);
   }, []);
