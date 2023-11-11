@@ -107,7 +107,7 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       ["UW Badgers", "Free Agents", "Powerpuff Mojos", "Swish Kebabs"],
-      ["1-0", "1-0", "0-1", "0-1"],
+      ["2-0", "1-1", "0-1", "0-1"],
     ],
     "Group B": [
       ["Penn State", "Illinois", "OSU Buckeyes"],
@@ -510,7 +510,15 @@ const matchDetails: ObjectType = {
       "33-15",
       "1",
     ],
-    ["UW Badgers", "Free Agent", "Nov 11", "1:30 PM", "Group, Court 7"],
+    [
+      "UW Badgers",
+      "Free Agent",
+      "Nov 11",
+      "1:30 PM",
+      "Group, Court 7",
+      "39-12",
+      "1",
+    ],
     [
       "Illinois",
       "Penn State",
