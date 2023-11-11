@@ -45,12 +45,12 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       [
-        "MySA Badgers FC",
         "Ngauman Singa PennState (NSP)",
+        "MySA Badgers FC",
         "PMX FC",
         "Illinois",
       ],
-      ["2-0-1", "2-0-0", "0-0-1", "0-0-2"],
+      ["3-0-0", "2-0-1", "0-0-2", "0-0-2"],
     ],
     "Group B": [
       ["Ola Bola", "Default Name", "Gophers Cyclones FC"],
@@ -158,7 +158,7 @@ const matchDetails: ObjectType = {
       "1",
     ],
     ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group", "2-1", "1"],
-    ["PMX FC", "NSP", "Nov 11", "11:40 AM", "Group"],
+    ["PMX FC", "NSP", "Nov 11", "11:40 AM", "Group", "0-3", "2"],
     ["Ola Bola Squad", "Default", "Nov 11", "12:20 PM", "Group", "2-3", "2"],
     ["MySA Badgers FC", "NSP", "Nov 11", "1:00 PM", "Group", "0-3", "2"],
     ["PMX FC", "Illinois", "Nov 11", "1:40 PM", "Group"],
