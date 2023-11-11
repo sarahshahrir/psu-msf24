@@ -53,15 +53,15 @@ const standingDetails: Group = {
       ["2-0-0", "1-0-0", "0-0-1", "0-0-2"],
     ],
     "Group B": [
-      ["Ola Bola", "Gophers Cyclones FC", "Default Name"],
-      ["0-0-0", "0-0-0", "0-0-0"],
+      ["Ola Bola", "Default Name", "Gophers Cyclones FC"],
+      ["1-0-0", "0-0-0", "0-0-1"],
     ],
   },
   Volleyball: {
     // every array represent a group and its point or score
     Teams: [
-      ["Cendol VB", "Illinois", "OSU Buckeyes", "Free Agent 1", "Free Agent 2"],
-      ["0-0", "0-0", "0-0", "0-0", "0-0"],
+      ["OSU Buckeyes", "Cendol VB", "Free Agent 1", "Free Agent 2", "Illinois"],
+      ["1-0", "0-0", "0-0", "0-0", "0-1"],
     ],
   },
   Badminton: {
@@ -86,19 +86,19 @@ const standingDetails: Group = {
     ],
     "Group C": [
       [
+        "M. Naziem & P. D. Iskandar",
         "D. Hazeem & J. Yao",
         "A. Nadzri & A. Azman",
-        "M. Naziem & P. D. Iskandar",
         "M. H. Mohamad & K. Mustafar",
       ],
-      ["3-0", "1-1", "1-1", "0-3"],
+      ["3-1", "2-2", "1-1", "0-3"],
     ],
     "Group D": [
       [
         "H. E. Razif & J. Jesmani",
-        "A. Chong & J. W. Chong",
-        "W. A. Anaqi & Fikri",
         "I. E. Ayob & T. Qistina",
+        "W. A. Anaqi & Fikri",
+        "A. Chong & J. W. Chong",
       ],
       ["2-1", "2-1", "1-2", "1-2"],
     ],
@@ -106,12 +106,12 @@ const standingDetails: Group = {
   Basketball: {
     // every array represent a group and its point or score
     "Group A": [
-      ["UW Badgers", "Swish Kebabs", "Free Agents", "Powerpuff Mojos"],
-      ["0-0", "0-0", "0-0", "0-0"],
+      ["UW Badgers", "Free Agents", "Powerpuff Mojos", "Swish Kebabs"],
+      ["1-0", "0-0", "0-0", "0-1"],
     ],
     "Group B": [
-      ["Penn State", "OSU Buckeyes", "Illinois"],
-      ["0-0", "0-0", "0-0"],
+      ["Penn State", "Illinois", "OSU Buckeyes"],
+      ["1-0", "0-0", "0-1"],
     ],
   },
   Sukaneka: {
@@ -148,7 +148,15 @@ const matchDetails: ObjectType = {
   Football: [
     ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group", "3-0", "1"],
     ["Illinois", "NSP", "Nov 11", "9:40 AM", "Group", "0-2", "2"],
-    ["Ola Bola Squad", "Gophers Cyclones FC", "Nov 11", "10:20 AM", "Group"],
+    [
+      "Ola Bola Squad",
+      "Gophers Cyclones FC",
+      "Nov 11",
+      "10:20 AM",
+      "Group",
+      "3-0",
+      "1",
+    ],
     ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group", "2-1", "1"],
     ["PMX FC", "NSP", "Nov 11", "11:40 AM", "Group"],
     ["Ola Bola Squad", "Default", "Nov 11", "12:20 PM", "Group"],
@@ -161,7 +169,7 @@ const matchDetails: ObjectType = {
     ["TBD", "TBD", "Nov 11", "5:00 PM", "Finals"],
   ],
   Volleyball: [
-    ["OSU Buckeyes", "Illinois", "Nov 11", "12:00 PM", "Court 5"],
+    ["OSU Buckeyes", "Illinois", "Nov 11", "12:00 PM", "Court 5", "2-0", "1"],
     ["Free Agent 1", "Free Agent 2", "Nov 11", "12:00 PM", "Court 6"],
     ["Cendol VB", "Illinois", "Nov 11", "12:40 PM", "Court 5"],
     ["OSU Buckeyes", "Free Agent 2", "Nov 11", "12:40 PM", "Court 6"],
@@ -414,29 +422,29 @@ const matchDetails: ObjectType = {
     ],
 
     [
-      "Winner Group A",
-      "Runner-up Group B",
+      "H. W. Woo & A. Daniel",
+      "Taqio & M. N. Sharull",
       "Nov 11",
       "3:00 PM",
       "Quarter, Court 1",
     ],
     [
-      "Winner Group B",
-      "Runner-up Group A",
+      "M. Naziem & P. D. Iskandar",
+      "I. E. Ayob & T. Qistina",
       "Nov 11",
       "3:00 PM",
       "Quarter, Court 2",
     ],
     [
-      "Winner Group C",
-      "Runner-up Group D",
+      "Aedan & JJ",
+      "M.N. Azman & S. Hisham",
       "Nov 11",
       "3:00 PM",
       "Quarter, Court 3",
     ],
     [
-      "Winner Group D",
-      "Runner-up Group C",
+      "D. Hazeem & J. Yao",
+      "H. E. Razif & J. Jesmani",
       "Nov 11",
       "3:00 PM",
       "Quarter, Court 4",
@@ -448,8 +456,24 @@ const matchDetails: ObjectType = {
     ["TBD", "TBD", "Nov 11", "4:40 PM", "Final, Court 1"],
   ],
   Basketball: [
-    ["UW Badgers", "Swish Kebabs", "Nov 11", "12:30 PM", "Group, Court 7"],
-    ["Penn State", "OSU Buckeyes", "Nov 11", "12:30 PM", "Group, Court 8"],
+    [
+      "UW Badgers",
+      "Swish Kebabs",
+      "Nov 11",
+      "12:30 PM",
+      "Group, Court 7",
+      "32-24",
+      "1",
+    ],
+    [
+      "Penn State",
+      "OSU Buckeyes",
+      "Nov 11",
+      "12:30 PM",
+      "Group, Court 8",
+      "18-16",
+      "1",
+    ],
     ["Free Agent", "Powerpuff Mojos", "Nov 11", "1:00 PM", "Group, Court 7"],
     ["UW Badgers", "Free Agent", "Nov 11", "1:30 PM", "Group, Court 7"],
     ["Illinois", "Penn State", "Nov 11", "1:30 PM", "Group, Court 8"],
