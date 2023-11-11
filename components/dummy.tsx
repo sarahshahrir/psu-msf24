@@ -249,15 +249,17 @@ export const basketballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "1",
-        isWinner: true,
+        resultText: "0",
+        isWinner: false,
         status: "PLAYED",
+        name: "UW Badgers",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
         resultText: "0",
         isWinner: false,
         status: "PLAYED",
+        name: "OSU Buckeyes",
       },
     ],
   },
@@ -272,15 +274,17 @@ export const basketballData: Match[] = [
     participants: [
       {
         id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
-        resultText: null,
+        resultText: "0",
         isWinner: false,
         status: "NO_SHOW",
+        name: "Penn State",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: null,
-        isWinner: true,
+        resultText: "0",
+        isWinner: false,
         status: "PLAYED",
+        name: "Swish Kebabs",
       },
     ],
   },
