@@ -193,7 +193,7 @@ export const badmintonData: Match[] = [
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
         resultText: "0",
-        isWinner: true,
+        isWinner: false,
         status: "PLAYED",
         name: "D. Hazeem & J. Yao",
       },
