@@ -47,10 +47,10 @@ const standingDetails: Group = {
       [
         "MySA Badgers FC",
         "Ngauman Singa PennState (NSP)",
-        "Illinois",
         "PMX FC",
+        "Illinois",
       ],
-      ["1-0-0", "1-0-0", "0-0-1", "0-0-1"],
+      ["2-0-0", "1-0-0", "0-0-1", "0-0-2"],
     ],
     "Group B": [
       ["Ola Bola", "Gophers Cyclones FC", "Default Name"],
@@ -69,11 +69,11 @@ const standingDetails: Group = {
     "Group A": [
       [
         "H. W. Woo & A. Daniel",
-        "J. Goh & J. Y. Tan",
         "Aedan & JJ",
+        "M. N. Baskaran & J. Y. Tan",
         "Fiena & D. Suhaimi",
       ],
-      ["2-0", "1-1", "1-1", "0-2"],
+      ["3-0", "2-1", "1-2", "0-3"],
     ],
     "Group B": [
       [
@@ -82,7 +82,7 @@ const standingDetails: Group = {
         "Daksheshkaran & M. I. Ispandi",
         "E. Victor & N. Razi",
       ],
-      ["2-0", "2-0", "0-2", "0-2"],
+      ["3-0", "2-1", "1-2", "0-3"],
     ],
     "Group C": [
       [
@@ -91,7 +91,7 @@ const standingDetails: Group = {
         "M. Naziem & P. D. Iskandar",
         "M. H. Mohamad & K. Mustafar",
       ],
-      ["2-0", "1-1", "1-1", "0-2"],
+      ["3-0", "1-1", "1-1", "0-3"],
     ],
     "Group D": [
       [
@@ -100,7 +100,7 @@ const standingDetails: Group = {
         "W. A. Anaqi & Fikri",
         "I. E. Ayob & T. Qistina",
       ],
-      ["2-0", "1-1", "1-1", "0-2"],
+      ["2-1", "2-1", "1-2", "1-2"],
     ],
   },
   Basketball: {
@@ -149,7 +149,7 @@ const matchDetails: ObjectType = {
     ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group", "3-0", "1"],
     ["Illinois", "NSP", "Nov 11", "9:40 AM", "Group", "0-2", "2"],
     ["Ola Bola Squad", "Gophers Cyclones FC", "Nov 11", "10:20 AM", "Group"],
-    ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group"],
+    ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group", "2-1", "1"],
     ["PMX FC", "NSP", "Nov 11", "11:40 AM", "Group"],
     ["Ola Bola Squad", "Default", "Nov 11", "12:20 PM", "Group"],
     ["MySA Badgers FC", "NSP", "Nov 11", "1:00 PM", "Group"],
@@ -185,7 +185,7 @@ const matchDetails: ObjectType = {
     ],
     [
       "Fiena & D. Suhaimi",
-      "J. Goh & J. Y. Tan",
+      "M. N. Baskaran & J. Y. Tan",
       "Nov 11",
       "10:00 AM",
       "Group, Court 2",
@@ -265,7 +265,7 @@ const matchDetails: ObjectType = {
     ],
     [
       "Aedan & JJ",
-      "J. Goh & J. Y. Tan",
+      "M. N. Baskaran & J. Y. Tan",
       "Nov 11",
       "10:30 AM",
       "Group, Court 2",
@@ -336,10 +336,13 @@ const matchDetails: ObjectType = {
     ],
     [
       "Han Wei Woo & Afiq Daniel",
-      "J. Goh & J. Y. Tan",
+      "M. N. Baskaran & J. Y. Tan",
       "Nov 11",
       "11:00 AM",
       "Group, Court 1",
+      "21-12",
+      "21-16",
+      "1",
     ],
     [
       "Aedan & JJ",
@@ -347,6 +350,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 2",
+      "21-8",
+      "21-14",
+      "1",
     ],
     [
       "M.N. Azman & S. Hisham",
@@ -354,6 +360,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 3",
+      "21-19",
+      "21-14",
+      "1",
     ],
     [
       "Daksheshkaran & M. I. Ispandi",
@@ -361,6 +370,10 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 4",
+      "21-15",
+      "18-21",
+      "11-6",
+      "1",
     ],
     [
       "D. Hazeem & J. Yao",
@@ -368,6 +381,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 5",
+      "21-9",
+      "21-8",
+      "1",
     ],
     [
       "M. Haziem & P. D. Iskandar",
@@ -382,6 +398,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 7",
+      "NA-NA",
+      "NA-NA",
+      "2",
     ],
     [
       "W. A. Anaqi & Fikri",
@@ -389,6 +408,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 8",
+      "NA-NA",
+      "NA-NA",
+      "2",
     ],
 
     [
