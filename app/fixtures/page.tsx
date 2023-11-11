@@ -11,7 +11,6 @@ import { Matches } from "@/components/Matches";
 import { Standings } from "@/components/Standings";
 import { Brackets } from "@/components/Brackets";
 import {
-  walkOverData,
   footballData,
   badmintonData,
   basketballData,
