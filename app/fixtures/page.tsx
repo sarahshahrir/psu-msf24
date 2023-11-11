@@ -50,18 +50,18 @@ const standingDetails: Group = {
         "PMX FC",
         "Illinois",
       ],
-      ["2-0-0", "1-0-0", "0-0-1", "0-0-2"],
+      ["2-0-1", "2-0-0", "0-0-1", "0-0-2"],
     ],
     "Group B": [
       ["Ola Bola", "Default Name", "Gophers Cyclones FC"],
-      ["1-0-0", "0-0-0", "0-0-1"],
+      ["1-0-1", "1-0-0", "0-0-1"],
     ],
   },
   Volleyball: {
     // every array represent a group and its point or score
     Teams: [
-      ["OSU Buckeyes", "Cendol VB", "Free Agent 1", "Free Agent 2", "Illinois"],
-      ["1-0", "1-0", "1-1", "0-0", "0-2"],
+      ["Cendol VB", "OSU Buckeyes", "Free Agent 1", "Free Agent 2", "Illinois"],
+      ["2-0", "1-1", "1-1", "0-0", "0-2"],
     ],
   },
   Badminton: {
@@ -159,8 +159,8 @@ const matchDetails: ObjectType = {
     ],
     ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group", "2-1", "1"],
     ["PMX FC", "NSP", "Nov 11", "11:40 AM", "Group"],
-    ["Ola Bola Squad", "Default", "Nov 11", "12:20 PM", "Group"],
-    ["MySA Badgers FC", "NSP", "Nov 11", "1:00 PM", "Group"],
+    ["Ola Bola Squad", "Default", "Nov 11", "12:20 PM", "Group", "2-3", "2"],
+    ["MySA Badgers FC", "NSP", "Nov 11", "1:00 PM", "Group", "0-3", "2"],
     ["PMX FC", "Illinois", "Nov 11", "1:40 PM", "Group"],
     ["Gophers Cyclones FC", "Default", "Nov 11", "2:20 PM", "Group"],
     ["Winner Group A", "Runner-up Group B", "Nov 11", "3:00 PM", "Playoffs"],
@@ -185,7 +185,16 @@ const matchDetails: ObjectType = {
       "25-14",
       "1",
     ],
-    ["Cendol VB", "OSU Buckeyes", "Nov 11", "5:30 PM", "Court 5"],
+    [
+      "Cendol VB",
+      "OSU Buckeyes",
+      "Nov 11",
+      "5:30 PM",
+      "Court 5",
+      "25-23",
+      "25-17",
+      "1",
+    ],
     [
       "Free Agent 1",
       "Cendol VB",
