@@ -106,8 +106,8 @@ const standingDetails: Group = {
   Basketball: {
     // every array represent a group and its point or score
     "Group A": [
-      ["UW Badgers", "Free Agents", "Swish Kebabs", "Powerpuff Mojos"],
-      ["2-0", "1-1", "1-1", "0-2"],
+      ["UW Badgers", "Swish Kebabs", "Free Agents", "Powerpuff Mojos"],
+      ["3-0", "2-1", "1-2", "0-3"],
     ],
     "Group B": [
       ["Penn State", "OSU Buckeyes", "Illinois"],
@@ -163,8 +163,8 @@ const matchDetails: ObjectType = {
     ["MySA Badgers FC", "NSP", "Nov 11", "1:00 PM", "Group", "0-3", "2"],
     ["PMX FC", "Illinois", "Nov 11", "1:40 PM", "Group", "1-5", "2"],
     ["Gophers Cyclones FC", "Default", "Nov 11", "2:20 PM", "Group"],
-    ["Winner Group A", "Runner-up Group B", "Nov 11", "3:00 PM", "Playoffs"],
-    ["Winner Group B", "Runner-up Group A", "Nov 11", "3:40 PM", "Playoffs"],
+    ["Default", "MySA Badgers FC", "Nov 11", "3:00 PM", "Playoffs"],
+    ["NSP", "Ola Bola Squad", "Nov 11", "3:40 PM", "Playoffs"],
     ["TBD", "TBD", "Nov 11", "4:20 PM", "3rd & 4th"],
     ["TBD", "TBD", "Nov 11", "5:00 PM", "Finals"],
   ],
@@ -492,14 +492,38 @@ const matchDetails: ObjectType = {
 
     [
       "H. W. Woo & A. Daniel",
-      "H. E. Razif & J. Jesmani",
+      "Aedan & JJ",
       "Nov 11",
       "3:50 PM",
       "Semis, Court 1",
+      "21-18",
+      "21-12",
+      "1",
     ],
-    ["Aedan & JJ", "D. Hazeem & J. Yao", "Nov 11", "3:50 PM", "Semis, Court 2"],
-    ["TBD", "TBD", "Nov 11", "4:40 PM", "3rd & 4th, Court 2"],
-    ["TBD", "TBD", "Nov 11", "4:40 PM", "Final, Court 1"],
+    [
+      "H. E. Razif & J. Jesmani",
+      "D. Hazeem & J. Yao",
+      "Nov 11",
+      "3:50 PM",
+      "Semis, Court 2",
+      "15-21",
+      "14-21",
+      "2",
+    ],
+    [
+      "Aedan & JJ",
+      "H. E. Razif & J. Jesmani",
+      "Nov 11",
+      "4:40 PM",
+      "3rd & 4th, Court 2",
+    ],
+    [
+      "H. W. Woo & A. Daniel",
+      "D. Hazeem & J. Yao",
+      "Nov 11",
+      "4:40 PM",
+      "Final, Court 1",
+    ],
   ],
   Basketball: [
     [
@@ -556,7 +580,15 @@ const matchDetails: ObjectType = {
       "30-25",
       "1",
     ],
-    ["UW Badgers", "Powerpuff Mojos", "Nov 11", "2:30 PM", "Group, Court 7"],
+    [
+      "UW Badgers",
+      "Powerpuff Mojos",
+      "Nov 11",
+      "2:30 PM",
+      "Group, Court 7",
+      "20-14",
+      "1",
+    ],
     [
       "Illinois",
       "OSU Buckeyes",
@@ -566,7 +598,15 @@ const matchDetails: ObjectType = {
       "10-29",
       "2",
     ],
-    ["Swish Kebabs", "Free Agent", "Nov 11", "3:00 PM", "Group, Court 7"],
+    [
+      "Swish Kebabs",
+      "Free Agent",
+      "Nov 11",
+      "3:00 PM",
+      "Group, Court 7",
+      "26-23",
+      "1",
+    ],
     [
       "Winner Group A",
       "Runner-up Group B",
