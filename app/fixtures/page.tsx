@@ -547,7 +547,15 @@ const matchDetails: ObjectType = {
       "17-40",
       "2",
     ],
-    ["Swish Kebabs", "Powerpuff Mojos", "Nov 11", "2:00 PM", "Group, Court 7"],
+    [
+      "Swish Kebabs",
+      "Powerpuff Mojos",
+      "Nov 11",
+      "2:00 PM",
+      "Group, Court 7",
+      "30-25",
+      "1",
+    ],
     ["UW Badgers", "Powerpuff Mojos", "Nov 11", "2:30 PM", "Group, Court 7"],
     [
       "Illinois",
