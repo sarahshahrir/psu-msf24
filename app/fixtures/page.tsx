@@ -47,10 +47,10 @@ const standingDetails: Group = {
       [
         "MySA Badgers FC",
         "Illinois",
-        "PMX FC",
         "Ngauman Singa PennState (NSP)",
+        "PMX FC",
       ],
-      ["0-0-0", "0-0-0", "0-0-0", "0-0-0"],
+      ["1-0-0", "0-0-0", "0-0-0", "0-0-1"],
     ],
     "Group B": [
       ["Ola Bola", "Gophers Cyclones FC", "Default Name"],
@@ -146,7 +146,7 @@ const matchDetails: ObjectType = {
   // After score is who won, 0 is draw, 1 is team1, 2 is team2
 
   Football: [
-    ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group"],
+    ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group", "3-0", "1"],
     ["Illinois", "NSP", "Nov 11", "9:40 AM", "Group"],
     ["Ola Bola Squad", "Gophers Cyclones FC", "Nov 11", "10:20 AM", "Group"],
     ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group"],
