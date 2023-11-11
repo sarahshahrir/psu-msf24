@@ -17,7 +17,7 @@ interface Props {
   score1?: string;
   score2?: string;
   score3?: string;
-  winner?: number;
+  winner?: string;
 }
 export const Matches = ({
   team1,
@@ -103,11 +103,12 @@ export const Matches = ({
             <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
               {team1}
             </p>
-            {(sport == "Volleyball" || sport == "Badminton") && winner == 1 && (
-              <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
-            )}
+            {(sport == "Volleyball" || sport == "Badminton") &&
+              winner == "1" && (
+                <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
+              )}
             {(sport == "Football" || sport == "Basketball") && (
-              <p className={`mr-2 ${winner == 1 && "font-bold"} `}>
+              <p className={`mr-2 ${winner == "1" && "font-bold"} `}>
                 {teamA_score1}
               </p>
             )}
@@ -116,11 +117,12 @@ export const Matches = ({
             <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
               {team2}
             </p>
-            {(sport == "Volleyball" || sport == "Badminton") && winner == 2 && (
-              <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
-            )}
+            {(sport == "Volleyball" || sport == "Badminton") &&
+              winner == "2" && (
+                <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
+              )}
             {(sport == "Football" || sport == "Basketball") && (
-              <p className={`mr-2 ${winner == 2 && "font-bold"} `}>
+              <p className={`mr-2 ${winner == "2" && "font-bold"} `}>
                 {teamB_score1}
               </p>
             )}
@@ -158,8 +160,8 @@ export const Matches = ({
           <div className="flex items-center justify-center gap-2 ease-in-out ">
             {scoreArray.map((score, index) => (
               <div key={index} className="flex flex-col text-sm">
-                <p class={`${winner == 1 && "font-bold"}`}>{score[0]}</p>
-                <p class={`${winner == 2 && "font-bold"}`}>{score[1]}</p>
+                <p class={`${winner == "1" && "font-bold"}`}>{score[0]}</p>
+                <p class={`${winner == "2" && "font-bold"}`}>{score[1]}</p>
               </div>
             ))}
           </div>
