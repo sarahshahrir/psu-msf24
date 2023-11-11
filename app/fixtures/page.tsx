@@ -146,7 +146,7 @@ const matchDetails: ObjectType = {
   // After score is who won, 0 is draw, 1 is team1, 2 is team2
 
   Football: [
-    ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group", "1-0", "1"],
+    ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group"],
     ["Illinois", "NSP", "Nov 11", "9:40 AM", "Group"],
     ["Ola Bola Squad", "Gophers Cyclones FC", "Nov 11", "10:20 AM", "Group"],
     ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group"],
@@ -179,10 +179,6 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 1",
-      "1-0",
-      "1-0",
-      "1-0",
-      "1",
     ],
     [
       "Fiena & D. Suhaimi",
@@ -190,10 +186,6 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 2",
-      "1-0",
-      "1-0",
-      "1-0",
-      "1",
     ],
     [
       "M.N. Azman & S. Hisham",
