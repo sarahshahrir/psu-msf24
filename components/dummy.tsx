@@ -36,7 +36,7 @@ type Match = {
   [key: string]: any;
 };
 
-export const walkOverData: Match[] = [
+export const badmintonData: Match[] = [
   {
     id: 260005,
     name: "Final - Match",
@@ -194,6 +194,150 @@ export const walkOverData: Match[] = [
         id: "76ac9113-a541-4b6a-a189-7b5ad43729bd",
         resultText: "0",
         isWinner: false,
+        status: "PLAYED",
+      },
+    ],
+  },
+];
+
+export const basketballData: Match[] = [
+  {
+    id: 260005,
+    name: "Final - Match",
+    nextMatchId: null,
+    nextLooserMatchId: undefined,
+    tournamentRoundText: "4",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
+    participants: [
+      {
+        id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
+        resultText: null,
+        isWinner: false,
+        status: null,
+      },
+      {
+        id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
+        resultText: null,
+        isWinner: false,
+        status: null,
+      },
+    ],
+  },
+  {
+    id: 260006,
+    name: "Semi Final - Match 1",
+    nextMatchId: 260005,
+    nextLooserMatchId: undefined,
+    tournamentRoundText: "3",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
+    participants: [
+      {
+        id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
+        resultText: "1",
+        isWinner: true,
+        status: "PLAYED",
+      },
+      {
+        id: "008de019-4af6-4178-a042-936c33fea3e9",
+        resultText: "0",
+        isWinner: false,
+        status: "PLAYED",
+      },
+    ],
+  },
+  {
+    id: 260013,
+    name: "Semi Final - Match 2",
+    nextMatchId: 260005,
+    nextLooserMatchId: undefined,
+    tournamentRoundText: "3",
+    startTime: "11-11-2023",
+    state: "SCORE_DONE",
+    participants: [
+      {
+        id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
+        resultText: null,
+        isWinner: false,
+        status: "NO_SHOW",
+      },
+      {
+        id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
+        resultText: null,
+        isWinner: true,
+        status: "PLAYED",
+      },
+    ],
+  },
+];
+
+export const footballData: Match[] = [
+  {
+    id: 260005,
+    name: "Final - Match",
+    nextMatchId: null,
+    nextLooserMatchId: undefined,
+    tournamentRoundText: "4",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
+    participants: [
+      {
+        id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
+        resultText: null,
+        isWinner: false,
+        status: null,
+      },
+      {
+        id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
+        resultText: null,
+        isWinner: false,
+        status: null,
+      },
+    ],
+  },
+  {
+    id: 260006,
+    name: "Semi Final - Match 1",
+    nextMatchId: 260005,
+    nextLooserMatchId: undefined,
+    tournamentRoundText: "3",
+    startTime: "11-11-2023",
+    state: "SCHEDULED",
+    participants: [
+      {
+        id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
+        resultText: "1",
+        isWinner: true,
+        status: "PLAYED",
+      },
+      {
+        id: "008de019-4af6-4178-a042-936c33fea3e9",
+        resultText: "0",
+        isWinner: false,
+        status: "PLAYED",
+      },
+    ],
+  },
+  {
+    id: 260013,
+    name: "Semi Final - Match 2",
+    nextMatchId: 260005,
+    nextLooserMatchId: undefined,
+    tournamentRoundText: "3",
+    startTime: "11-11-2023",
+    state: "SCORE_DONE",
+    participants: [
+      {
+        id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
+        resultText: null,
+        isWinner: false,
+        status: "NO_SHOW",
+      },
+      {
+        id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
+        resultText: null,
+        isWinner: true,
         status: "PLAYED",
       },
     ],

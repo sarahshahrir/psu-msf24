@@ -10,7 +10,12 @@ import { Footer } from "@/components/Footer";
 import { Matches } from "@/components/Matches";
 import { Standings } from "@/components/Standings";
 import { Brackets } from "@/components/Brackets";
-import { walkOverData } from "@/components/dummy";
+import {
+  walkOverData,
+  footballData,
+  badmintonData,
+  basketballData,
+} from "@/components/dummy";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useRecoilState } from "recoil";
 import { sportState } from "@/components/atoms";
@@ -138,8 +143,11 @@ const standingDetails: Group = {
 };
 
 const matchDetails: ObjectType = {
+  // After group is the score
+  // After score is who won, 0 is draw, 1 is team1, 2 is team2
+
   Football: [
-    ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group"],
+    ["MySA Badgers FC", "PMX FC", "Nov 11", "9:00 AM", "Group", "1-0", "1"],
     ["Illinois", "NSP", "Nov 11", "9:40 AM", "Group"],
     ["Ola Bola Squad", "Gophers Cyclones FC", "Nov 11", "10:20 AM", "Group"],
     ["MySA Badgers FC", "Illinois", "Nov 11", "11:00 AM", "Group"],
@@ -172,6 +180,11 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 1",
+      "1-0",
+      "1-0",
+      "1-0",
+
+      "1",
     ],
     [
       "Fiena & D. Suhaimi",
@@ -179,6 +192,11 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 2",
+      "1-0",
+      "1-0",
+      "1-0",
+
+      "1",
     ],
     [
       "M.N. Azman & S. Hisham",
@@ -542,16 +560,63 @@ export default function Fixture() {
         </TabsList>
         <TabsContent value="Matches">
           {/* loop through matchDetails */}
-          {matchDetails[sport as keyof ObjectType].map((matchDetail, index) => (
-            <Matches
-              key={index}
-              team1={matchDetail[0]}
-              team2={matchDetail[1]}
-              date={matchDetail[2]}
-              time={matchDetail[3]}
-              venue={matchDetail[4]}
-            />
-          ))}
+          {matchDetails[sport as keyof ObjectType].map((matchDetail, index) => {
+            // check the length of the array
+            if (matchDetail.length == 7) {
+              return (
+                <Matches
+                  key={index}
+                  team1={matchDetail[0]}
+                  team2={matchDetail[1]}
+                  date={matchDetail[2]}
+                  time={matchDetail[3]}
+                  venue={matchDetail[4]}
+                  score1={matchDetail[5]}
+                  winner={matchDetail[6]}
+                />
+              );
+            } else if (matchDetail.length == 8) {
+              return (
+                <Matches
+                  key={index}
+                  team1={matchDetail[0]}
+                  team2={matchDetail[1]}
+                  date={matchDetail[2]}
+                  time={matchDetail[3]}
+                  venue={matchDetail[4]}
+                  score1={matchDetail[5]}
+                  score2={matchDetail[6]}
+                  winner={matchDetail[7]}
+                />
+              );
+            } else if (matchDetail.length == 9) {
+              return (
+                <Matches
+                  key={index}
+                  team1={matchDetail[0]}
+                  team2={matchDetail[1]}
+                  date={matchDetail[2]}
+                  time={matchDetail[3]}
+                  venue={matchDetail[4]}
+                  score1={matchDetail[5]}
+                  score2={matchDetail[6]}
+                  score3={matchDetail[7]}
+                  winner={matchDetail[8]}
+                />
+              );
+            } else {
+              return (
+                <Matches
+                  key={index}
+                  team1={matchDetail[0]}
+                  team2={matchDetail[1]}
+                  date={matchDetail[2]}
+                  time={matchDetail[3]}
+                  venue={matchDetail[4]}
+                />
+              );
+            }
+          })}
         </TabsContent>
         <TabsContent value="Standings">
           {" "}
@@ -566,9 +631,9 @@ export default function Fixture() {
               />
             )
           )}
-          {(sport == "Football" ||
-            sport == "Basketball" ||
-            sport == "Badminton") && <Brackets data={walkOverData} />}
+          {sport == "Badminton" && <Brackets data={badmintonData} />}
+          {sport == "Basketball" && <Brackets data={basketballData} />}
+          {sport == "Football" && <Brackets data={footballData} />}
         </TabsContent>
       </Tabs>
 
