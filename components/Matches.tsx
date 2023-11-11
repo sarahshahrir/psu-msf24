@@ -97,7 +97,7 @@ export const Matches = ({
             className={`flex items-center ${
               sport == "Football" || sport == "Basketball"
                 ? "justify-between"
-                : "gap-2"
+                : "gap-2 text-xs"
             }`}
           >
             <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
@@ -113,7 +113,13 @@ export const Matches = ({
               </p>
             )}
           </div>
-          <div className="flex items-center justify-between">
+          <div
+            className={`flex items-center ${
+              sport == "Football" || sport == "Basketball"
+                ? "justify-between"
+                : "gap-2 text-xs"
+            }`}
+          >
             <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
               {team2}
             </p>
