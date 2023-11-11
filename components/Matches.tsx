@@ -165,6 +165,9 @@ export const Matches = ({
         >
           <div className="flex items-center justify-center gap-2 ease-in-out ">
             {scoreArray.map((score, index) => (
+              // convert score to integer
+              // const teamA = parseInt(score[0]);
+              // const teamB = parseInt(score[1]);
               <div key={index} className="flex flex-col text-sm">
                 <p className={`${winner == "1" && "font-bold"}`}>{score[0]}</p>
                 <p className={`${winner == "2" && "font-bold"}`}>{score[1]}</p>

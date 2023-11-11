@@ -73,7 +73,7 @@ const standingDetails: Group = {
         "Aedan & JJ",
         "Fiena & D. Suhaimi",
       ],
-      ["1-0", "1-0", "0-0", "0-0"],
+      ["2-0", "1-1", "1-1", "0-2"],
     ],
     "Group B": [
       [
@@ -82,7 +82,7 @@ const standingDetails: Group = {
         "Daksheshkaran & M. I. Ispandi",
         "E. Victor & N. Razi",
       ],
-      ["1-0", "1-0", "0-0", "0-0"],
+      ["2-0", "2-0", "0-2", "0-2"],
     ],
     "Group C": [
       [
@@ -91,7 +91,7 @@ const standingDetails: Group = {
         "M. Naziem & P. D. Iskandar",
         "M. H. Mohamad & K. Mustafar",
       ],
-      ["1-0", "1-0", "0-0", "0-0"],
+      ["2-0", "1-1", "1-1", "0-2"],
     ],
     "Group D": [
       [
@@ -100,7 +100,7 @@ const standingDetails: Group = {
         "W. A. Anaqi & Fikri",
         "I. E. Ayob & T. Qistina",
       ],
-      ["1-0", "1-0", "0-0", "0-0"],
+      ["2-0", "1-1", "1-1", "0-2"],
     ],
   },
   Basketball: {
@@ -259,6 +259,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 1",
+      "21-9",
+      "21-10",
+      "1",
     ],
     [
       "Aedan & JJ",
@@ -266,6 +269,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 2",
+      "21-15",
+      "21-12",
+      "1",
     ],
     [
       "M.N. Azman & S. Hisham",
@@ -273,6 +279,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 3",
+      "21-5",
+      "21-15",
+      "1",
     ],
     [
       "Daksheshkaran & M. I. Ispandi",
@@ -280,6 +289,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 4",
+      "20-22",
+      "18-21",
+      "2",
     ],
     [
       "D. Hazeem & J. Yao",
@@ -287,6 +299,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 5",
+      "21-8",
+      "21-4",
+      "1",
     ],
     [
       "M. Haziem & P. D. Iskandar",
@@ -294,6 +309,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 6",
+      "21-15",
+      "21-15",
+      "1",
     ],
     [
       "H. E. Razif & J. Jesmani",
@@ -301,6 +319,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 7",
+      "21-7",
+      "21-9",
+      "1",
     ],
     [
       "W. A. Anaqi & Fikri",
@@ -308,6 +329,10 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 8",
+      "21-17",
+      "17-21",
+      "21-9",
+      "1",
     ],
     [
       "Han Wei Woo & Afiq Daniel",
