@@ -48,14 +48,14 @@ export const badmintonData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: null,
-        isWinner: false,
+        resultText: "2",
+        isWinner: true,
         status: null,
         name: "H. W. Woo & A. Daniel",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: null,
+        resultText: "0",
         isWinner: false,
         status: null,
         name: "D. Hazeem & J. Yao",
@@ -229,12 +229,14 @@ export const basketballData: Match[] = [
         resultText: null,
         isWinner: false,
         status: null,
+        name: "UW Badgers",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
         resultText: null,
         isWinner: false,
         status: null,
+        name: "Penn State",
       },
     ],
   },
@@ -249,14 +251,14 @@ export const basketballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "0",
-        isWinner: false,
+        resultText: "35",
+        isWinner: true,
         status: "PLAYED",
         name: "UW Badgers",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
-        resultText: "0",
+        resultText: "22",
         isWinner: false,
         status: "PLAYED",
         name: "OSU Buckeyes",
@@ -274,14 +276,14 @@ export const basketballData: Match[] = [
     participants: [
       {
         id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
-        resultText: "0",
-        isWinner: false,
+        resultText: "35",
+        isWinner: true,
         status: "NO_SHOW",
         name: "Penn State",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "0",
+        resultText: "26",
         isWinner: false,
         status: "PLAYED",
         name: "Swish Kebabs",
