@@ -226,14 +226,14 @@ export const basketballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: null,
-        isWinner: false,
+        resultText: "24",
+        isWinner: true,
         status: null,
         name: "UW Badgers",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: null,
+        resultText: "18",
         isWinner: false,
         status: null,
         name: "Penn State",
@@ -304,15 +304,17 @@ export const footballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: null,
+        resultText: "0",
         isWinner: false,
         status: null,
+        name: "MySA Badgers FC",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: null,
-        isWinner: false,
+        resultText: "4",
+        isWinner: true,
         status: null,
+        name: "NSP",
       },
     ],
   },
@@ -334,8 +336,8 @@ export const footballData: Match[] = [
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
-        resultText: "0",
-        isWinner: false,
+        resultText: "3",
+        isWinner: true,
         status: "PLAYED",
         name: "MySA Badgers FC",
       },
@@ -352,14 +354,14 @@ export const footballData: Match[] = [
     participants: [
       {
         id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
-        resultText: "0",
-        isWinner: false,
+        resultText: "3",
+        isWinner: true,
         status: "NO_SHOW",
         name: "NSP",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "0",
+        resultText: "1",
         isWinner: false,
         status: "PLAYED",
         name: "Ola Bola Squad",
