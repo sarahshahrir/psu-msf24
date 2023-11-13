@@ -108,7 +108,7 @@ export default function Home() {
       {/*    </div>*/}
       <Image
         onClick={() => setIsClicked(!isClicked)}
-        className={`rounded-md translate-y-[-50px] ease-in-out duration-700 ${
+        className={`rounded-md translate-y-[-50px] md:translate-y-[0px]  ease-in-out duration-700 ${
           !isClicked && "blur-sm animate-pulse"
         } `}
         src={pic}
