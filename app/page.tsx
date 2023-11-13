@@ -3,6 +3,7 @@
 import Image from "next/image";
 import mysa from "@/public/mysa.png";
 import namsa from "@/public/namsa.jpeg";
+import pic from "@/public/pic.jpeg";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -14,6 +15,7 @@ export default function Home() {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
 
   const deadline = "November, 11, 2023";
 
@@ -87,26 +89,46 @@ export default function Home() {
         </div>
       </div>
       {/* display the countdown */}
-      <div className="flex flex-col">
-        {/* numbers */}
-        <div className="grid grid-cols-4 text-center text-border-white text-border-size-1 text-black font-extrabold text-3xl md:translate-y-0 translate-y-[-60px] min-w-[250px]">
+      {/* <div className="flex flex-col"> */}
+      {/* numbers */}
+      {/* <div className="grid grid-cols-4 text-center text-border-white text-border-size-1 text-black font-extrabold text-3xl md:translate-y-0 translate-y-[-60px] min-w-[250px]">
           <p className="text-rose-600">{days}</p>
           <p>{hours}</p>
           <p>{minutes}</p>
           <p>{seconds}</p>
-        </div>
+        </div> */}
 
-        {/* stats */}
-        <div className="grid grid-cols-4 text-center text-border-white text-border-size-1 text-black  font-extrabold text-xs md:translate-y-0 translate-y-[-60px] min-w-[250px]">
+      {/* stats */}
+      {/* <div className="grid grid-cols-4 text-center text-border-white text-border-size-1 text-black  font-extrabold text-xs md:translate-y-0 translate-y-[-60px] min-w-[250px]">
           <p>DAY</p>
           <p>HRS</p>
           <p>MIN</p>
           <p>SEC</p>
-        </div>
+        </div> */}
+      {/*    </div>*/}
+      <Image
+        onClick={() => setIsClicked(!isClicked)}
+        className={`rounded-md translate-y-[-50px] ease-in-out duration-700 ${
+          !isClicked && "blur-sm animate-pulse"
+        } `}
+        src={pic}
+        alt="Picture of the author"
+        width={300}
+        height={300}
+      />
+      <div className="fixed flex items-center justify-center gap-3 bottom-8">
+        <Button variant="outline">
+          <Link href="/fixtures">View fixtures</Link>
+        </Button>
+        <Button variant="outline">
+          <a
+            href="
+          https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7"
+          >
+            Link to Pictures
+          </a>
+        </Button>
       </div>
-      <Button className="fixed bottom-8" variant="outline">
-        <Link href="/fixtures">View fixtures</Link>
-      </Button>
     </main>
   );
 }

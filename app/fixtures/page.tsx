@@ -60,8 +60,8 @@ const standingDetails: Group = {
   Volleyball: {
     // every array represent a group and its point or score
     Teams: [
-      ["Cendol VB", "OSU Buckeyes", "Free Agent 1", "Free Agent 2", "Illinois"],
-      ["2-0", "1-1", "1-1", "0-0", "0-2"],
+      ["Cendol VB", "OSU Buckeyes", "Free Agent 2", "Free Agent 1", "Illinois"],
+      ["4-0", "3-1", "2-2", "1-3", "0-4"],
     ],
   },
   Badminton: {
@@ -178,11 +178,35 @@ const matchDetails: ObjectType = {
   ],
   Volleyball: [
     ["OSU Buckeyes", "Illinois", "Nov 11", "12:00 PM", "Court 5", "2-0", "1"],
-    ["Free Agent 1", "Free Agent 2", "Nov 11", "12:00 PM", "Court 6"],
-    ["Cendol VB", "Illinois", "Nov 11", "12:40 PM", "Court 5"],
-    ["OSU Buckeyes", "Free Agent 2", "Nov 11", "12:40 PM", "Court 6"],
-    ["Free Agent 2", "Cendol VB", "Nov 11", "1:20 PM", "Court 5"],
-    ["OSU Buckeyes", "Free Agent 1", "Nov 11", "1:20 PM", "Court 6"],
+    [
+      "Free Agent 1",
+      "Free Agent 2",
+      "Nov 11",
+      "12:00 PM",
+      "Court 6",
+      "0-3",
+      "2",
+    ],
+    ["Cendol VB", "Illinois", "Nov 11", "12:40 PM", "Court 5", "3-0", "1"],
+    [
+      "OSU Buckeyes",
+      "Free Agent 2",
+      "Nov 11",
+      "12:40 PM",
+      "Court 6",
+      "3-0",
+      "1",
+    ],
+    ["Free Agent 2", "Cendol VB", "Nov 11", "1:20 PM", "Court 5", "0-2", "2"],
+    [
+      "OSU Buckeyes",
+      "Free Agent 1",
+      "Nov 11",
+      "1:20 PM",
+      "Court 6",
+      "2-0",
+      "1",
+    ],
     [
       "Free Agent 1",
       "Illinois",
@@ -213,7 +237,7 @@ const matchDetails: ObjectType = {
       "13-25",
       "2",
     ],
-    ["Illinois", "Free Agent 2", "Nov 11", "6:10 PM", "Court 6"],
+    ["Illinois", "Free Agent 2", "Nov 11", "6:10 PM", "Court 6", "2-0", "1"],
   ],
   Badminton: [
     [
