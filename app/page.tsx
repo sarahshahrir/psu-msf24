@@ -61,7 +61,7 @@ export default function Home() {
 
       <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] md:my-6  font-extrabold text-4xl md:translate-y-0 translate-y-[-60px]">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
-        MSF 23'
+        MSF 24'
       </h1>
 
       {/* details */}

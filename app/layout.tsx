@@ -10,8 +10,8 @@ import RecoilRootWrapper from "@/app/recoil";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "msf2023",
-  description: "Malaysian Sports Festival 2023",
+  title: "MSF 2024",
+  description: "Malaysian Sports Festival 2024",
 };
 
 export default function RootLayout({

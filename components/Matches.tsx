@@ -77,7 +77,7 @@ export const Matches = ({
         // if sport is badminton or volleyball, show the score only if there is a score
 
         if (
-          (sport == "Badminton" || sport == "Volleyball") &&
+          (sport == "Badminton: Men's" || sport == "Volleyball") &&
           scoreArray.length > 0
         ) {
           setShowScore(!showScore);
@@ -100,15 +100,15 @@ export const Matches = ({
                 : "gap-2 text-xs"
             }`}
           >
-            <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
+            <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
               {team1}
             </p>
-            {(sport == "Volleyball" || sport == "Badminton") &&
+            {(sport == "Volleyball" || sport == "Badminton: Men's") &&
               winner == "1" && (
                 <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
               )}
             {(sport == "Football" || sport == "Basketball") && (
-              <p className={`mr-2 ${winner == "1" && "font-bold"} `}>
+              <p className={`mr-2 ${winner == "1" && "font-bold" } `}>
                 {teamA_score1}
               </p>
             )}
@@ -120,10 +120,10 @@ export const Matches = ({
                 : "gap-2 text-xs"
             }`}
           >
-            <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
+            <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
               {team2}
             </p>
-            {(sport == "Volleyball" || sport == "Badminton") &&
+            {(sport == "Volleyball" || sport == "Badminton: Men's") &&
               winner == "2" && (
                 <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
               )}
@@ -136,10 +136,10 @@ export const Matches = ({
         </div>
       ) : (
         <div className="flex flex-col gap-1 min-w-[140px] col-span-2 text-sm">
-          <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
+          <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
             {team1}
           </p>
-          <p className={`${sport == "Sukaneka" && "truncate max-w-[170px]"}`}>
+          <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
             {team2}
           </p>
         </div>
@@ -178,7 +178,7 @@ export const Matches = ({
       ) : (
         <div className="flex flex-col items-center justify-center text-xs font-semibold text-center whitespace-nowrap">
           <div>
-            {date}, {time}
+            {time}
           </div>
           <div>{venue}</div>
         </div>
