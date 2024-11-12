@@ -40,7 +40,7 @@ export const Footer = () => {
       <Button
         // write conditional statement for classname in tailwind
         className={`${
-          sport == "Football" && "outline outline outline-rose-700"
+          sport == "Football" && "outline outline outline-customBlue"
         }`}
         variant="outline"
         onClick={() => {
@@ -56,7 +56,7 @@ export const Footer = () => {
       </Button>
       <Button
         className={`ease-in-out duration-200 ${
-          sport == "Basketball" && "outline outline-3 outline-rose-700"
+          sport == "Basketball" && "outline outline-3 outline-customBlue"
         }`}
         variant="outline"
         onClick={() => {
@@ -72,7 +72,7 @@ export const Footer = () => {
       </Button>
       <Button
         className={`ease-in-out duration-200 ${
-          sport == "Volleyball" && "outline outline-3 outline-rose-700"
+          sport == "Volleyball" && "outline outline-3 outline-customBlue"
         }`}
         variant="outline"
         onClick={() => {
@@ -91,7 +91,7 @@ export const Footer = () => {
       <div className="relative" ref={dropdownRef}>
         <Button
           className={`${
-            (sport === "Badminton: Men's" || sport === "Badminton: Women's")&& "outline outline-3 outline-rose-700"
+            (sport === "Badminton: Men's" || sport === "Badminton: Women's")&& "outline outline-3 outline-customBlue"
           }`}
           variant="outline"
           onClick={toggleBadmintonDropdown}
