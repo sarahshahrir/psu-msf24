@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import basketball from "@/public/basketball.png";
@@ -12,10 +12,28 @@ import { sportState } from "@/components/atoms";
 export const Footer = () => {
   const [sport, setSport] = useRecoilState(sportState);
   const [isBadmintonDropdownOpen, setBadmintonDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null); // Define dropdownRef with useRef
 
   const toggleBadmintonDropdown = () => {
     setBadmintonDropdownOpen(!isBadmintonDropdownOpen);
   }
+
+  // Close the dropdown when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setBadmintonDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="fixed flex items-center gap-3 bottom-8">
@@ -69,38 +87,41 @@ export const Footer = () => {
         />
       </Button>
 
-      <Button
-        className={`${
-          sport == "Badminton" && "outline-double outline-4 outline-rose-700"
-        }`}
-        variant="outline"
-        onClick={toggleBadmintonDropdown}
-      >
-        <Image src={badminton} alt="Badminton Icon" width={20} height={20} />
-      </Button>
+      
+      <div className="relative" ref={dropdownRef}>
+        <Button
+          className={`${
+            sport === "Badminton" && "outline-double outline-4 outline-rose-700"
+          }`}
+          variant="outline"
+          onClick={toggleBadmintonDropdown}
+        >
+          <Image src={badminton} alt="Badminton Icon" width={20} height={20} />
+        </Button>
 
-      {isBadmintonDropdownOpen && (
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-[-50px] flex flex-col items-center bg-white border border-gray-300 rounded-md shadow-lg">
-          <button
-            className="px-4 py-2 text-sm hover:bg-gray-100"
-            onClick={() => {
-              setSport("Badminton: Men's");
-              setBadmintonDropdownOpen(false);
-            }}
-          >
-            {`Men's Badminton`}
-          </button>
-          <button
-            className="px-4 py-2 text-sm hover:bg-gray-100"
-            onClick={() => {
-              setSport("Badminton: Women's");
-              setBadmintonDropdownOpen(false);
-            }}
-          >
-            {`Women's Badminton`}
-          </button>
-        </div>
-      )}
+        {isBadmintonDropdownOpen && (
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 flex flex-col items-center bg-white border border-gray-300 rounded-md shadow-lg">
+            <button
+              className="px-4 py-2 text-sm hover:bg-gray-100"
+              onClick={() => {
+                setSport("Badminton: Men's");
+                setBadmintonDropdownOpen(false);
+              }}
+            >
+              {`Men's Badminton`}
+            </button>
+            <button
+              className="px-4 py-2 text-sm hover:bg-gray-100"
+              onClick={() => {
+                setSport("Badminton: Women's");
+                setBadmintonDropdownOpen(false);
+              }}
+            >
+              {`Women's Badminton`}
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
