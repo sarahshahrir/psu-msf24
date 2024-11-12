@@ -88,7 +88,7 @@ export const Footer = () => {
               setBadmintonDropdownOpen(false);
             }}
           >
-            Men&apos;s Badminton
+            {"Men's Badminton"}
           </button>
           <button
             className="px-4 py-2 text-sm hover:bg-gray-100"
@@ -97,7 +97,7 @@ export const Footer = () => {
               setBadmintonDropdownOpen(false);
             }}
           >
-            Women&apos;s Badminton
+            {"Women's Badminton"}
           </button>
         </div>
       )}
