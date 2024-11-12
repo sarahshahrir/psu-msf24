@@ -20,10 +20,10 @@ export const Footer = () => {
 
   // Close the dropdown when clicking outside of it
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
+        !dropdownRef.current.contains(event.target as Node)
       ) {
         setBadmintonDropdownOpen(false);
       }
