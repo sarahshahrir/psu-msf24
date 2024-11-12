@@ -143,7 +143,7 @@ const matchDetails: ObjectType = {
       "NSP United",
       "Wisconsin",
       "Nov 16",
-      "Now", // 9:10 AM
+      "Now", // 9:40 AM
       "Group",
       "-",
       "",
@@ -164,17 +164,17 @@ const matchDetails: ObjectType = {
       "Penn State",
       "Santai Illini",
       "Nov 11",
-      "Now",
+      "8:30 AM",
       "Group, Court B",
-      "-",
-      "",
+      "8-7",
+      "1",
     ],
-    ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "9:05 AM", "Group, Court A", "-", ""],
+    ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "Now", "Group, Court A", "-", ""], // 9:05 AM
     [
       "Santai Illini",
       "Ben 10",
       "Nov 11",
-      "9:05 AM",
+      "Now", // 9:05 AM
       "Group, Court B",
       "-",
       "",
@@ -235,7 +235,7 @@ const matchDetails: ObjectType = {
       "Izzul & Jason",
       "Nabil & Ralf",
       "Nov 11",
-      "8:50 AM",
+      "Now", // 8:50 AM
       "Group, Court A",
       "NA-NA",
       "",
@@ -435,14 +435,14 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 2",
-      "NA-NA",
-      "",
+      "9-17",
+      "2",
     ],
     [
       "Denmarks National Mixed",
       "Free Agent",
       "Nov 11",
-      "9:30 AM",
+      "Now", // 9:30 AM
       "Group, Court 1",
       "NA-NA",
       "",
@@ -451,7 +451,7 @@ const matchDetails: ObjectType = {
       "The Nuthouse",
       "Kedutaan dan Konsular",
       "Nov 11",
-      "9:30 AM",
+      "Now", // 9:30 AM
       "Group, Court 2",
       "NA-NA",
       "",
@@ -587,7 +587,7 @@ const matchDetails: ObjectType = {
       "Nadia & Nadia",
       "Farhah & Izza",
       "Nov 12",
-      "8:50 AM",
+      "Now", // 8:50 AM
       "Group, Court B",
       "NA-NA",
       ""
