@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import mysa from "@/public/mysa.png";
+import msc from "@/public/msc.png";
 import namsa from "@/public/namsa.jpeg";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -734,7 +734,7 @@ export default function Fixture() {
   return (
     <main className="flex flex-col items-center min-h-screen gap-6 px-4 py-8 pb-32 md:p-24 ">
       <div className="flex items-center gap-2 translate-x-[-10px] translate-y-3">
-        <Image src={mysa} alt="Picture of the author" width={60} height={60} />
+        <Image src={msc} alt="Picture of the author" width={60} height={60} />
         <h1 className="text-border-white text-border-size-1 text-black md:text-[40px] font-extrabold text-3xl">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           MSF 24'

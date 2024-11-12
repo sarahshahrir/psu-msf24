@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import mysa from "@/public/mysa.png";
+import msc from "@/public/msc.png";
 import namsa from "@/public/namsa.jpeg";
 import pic from "@/public/pic.jpeg";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -49,7 +49,7 @@ export default function Home() {
         preload="auto"
       />
       <div className="flex items-center gap-2 translate-x-[-10px]  md:translate-y-3 translate-y-[-50px]">
-        <Image src={mysa} alt="Picture of the author" width={80} height={80} />
+        <Image className="rounded-full" src={msc} alt="Picture of the author" width={50} height={50} />
         <Image
           className="rounded-full"
           src={namsa}
@@ -118,14 +118,14 @@ export default function Home() {
       />
       <div className="fixed flex items-center justify-center gap-3 bottom-8">
         <Button variant="outline">
-          <Link href="/fixtures">View fixtures</Link>
+          <Link href="/fixtures">Fixtures</Link>
         </Button>
         <Button variant="outline">
           <a
             href="
           https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7"
           >
-            Link to Pictures
+            Pictures
           </a>
         </Button>
       </div>
