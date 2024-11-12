@@ -66,13 +66,13 @@ export default function Home() {
 
       {/* details */}
       <div className="flex items-center justify-center md:gap-5 gap-2 md:translate-y-0 translate-y-[-60px]">
-        <h1 className="text-sm font-extrabold text-white text-border-white text-border-size-1 md:text-2xl ">
-          UW-Madison
+        <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl ">
+          Penn State
         </h1>
         <div className="inline-block h-[30px]  w-0.5 self-stretch bg-slate-600 opacity-100 dark:opacity-50"></div>
         <div className="flex items-center gap-1 md:gap-3 ">
-          <h1 className="text-sm font-extrabold text-white text-border-white text-border-size-1 md:text-2xl ">
-            11-12
+          <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl ">
+            16
           </h1>
           <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl">
             Nov
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <div className="inline-block h-[30px] w-0.5 self-stretch bg-slate-600  opacity-100 dark:opacity-50"></div>
         <div className="flex items-center gap-1 md:gap-3">
-          <h1 className="text-sm font-extrabold text-white text-border-white text-border-size-1 md:text-2xl">
+          <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl">
             15
           </h1>
           <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl">

@@ -226,7 +226,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "8:30 AM",
       "Group, Court A",
-      "-",
+      "NA-NA",
       "NA-NA",
       "",
     ],
@@ -306,8 +306,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:10 AM",
       "Group, Court A",
-      "21-9",
-      "21-10",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -316,8 +316,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "12:30 PM",
       "Group, Court A",
-      "21-15",
-      "21-12",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -326,8 +326,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "12:50 PM",
       "Group, Court A",
-      "21-5",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -336,8 +336,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "1:10 PM",
       "Group, Court A",
-      "20-22",
-      "18-21",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -346,18 +346,18 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "1:30 PM",
       "QF 1, Court A",
-      "21-8",
-      "21-4",
+      "NA-NA",
+      "NA-NA",
       "",
-    ],
+    ], 
     [
       "TBD",
       "TBD",
       "Nov 11",
       "1:30 PM",
       "QF 2, Court B",
-      "21-8",
-      "21-4",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -366,8 +366,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "2:00 PM",
       "QF 3, Court A",
-      "21-15",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -376,8 +376,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "2:00 PM",
       "QF 4, Court B",
-      "21-15",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -386,8 +386,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "2:30 PM",
       "Semi 1, Court A",
-      "21-15",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -396,8 +396,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "3:00 PM",
       "Semi 2, Court A",
-      "21-15",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -406,8 +406,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "3:30 PM",
       "3rd & 4th, Court A",
-      "21-15",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
     [
@@ -416,8 +416,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "4:00 PM",
       "Finals, Court A",
-      "21-15",
-      "21-15",
+      "NA-NA",
+      "NA-NA",
       "",
     ],
   ],
@@ -428,7 +428,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -437,7 +437,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 2",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -446,7 +446,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:30 AM",
       "Group, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -455,7 +455,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:30 AM",
       "Group, Court 2",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -464,7 +464,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -473,7 +473,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 2",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -482,7 +482,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -491,7 +491,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 2",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -500,7 +500,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -509,7 +509,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 2",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -518,7 +518,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:30 AM",
       "Group, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -527,7 +527,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:30 AM",
       "Group, Court 2",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -536,7 +536,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "1:00 PM",
       "Semi, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -545,7 +545,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "2:00 PM",
       "Semi, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -554,7 +554,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "3:00 PM",
       "3rd & 4th, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -563,7 +563,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "4:00 PM",
       "Finals, Court 1",
-      "-",
+      "NA-NA",
       "",
     ],
   ],
@@ -574,6 +574,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "8:30 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Nadia & Nadia",
@@ -581,6 +583,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "8:50 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Sofea & Sorfeena",
@@ -588,6 +592,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "9:10 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Fazlina & Farzanah",
@@ -595,6 +601,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "9:30 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Farah & Syazlyana",
@@ -602,6 +610,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "9:50 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Nadia & Nadia",
@@ -609,6 +619,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "10:10 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Athliah & Nabilah",
@@ -616,6 +628,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "10:30 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Farhah & Izza",
@@ -623,6 +637,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "10:50 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Farah & Syazlyana",
@@ -630,6 +646,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "11:10 AM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Nadia & Nadia",
@@ -637,6 +655,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "12:30 PM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Athilah & Nabilah",
@@ -644,6 +664,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "12:50 PM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "Farhah & Izza",
@@ -651,6 +673,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "1:10 PM",
       "Group, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "TBD",
@@ -658,12 +682,17 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "2:30 PM",
       "Semi, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "TBD",
       "TBD",
       "Nov 12",
       "12:50 AM",
+      "Semi, Court B",
+      "NA-NA",
+      "NA-NA",
       "Semi, Court B",
     ],
     [
@@ -672,6 +701,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "3:00 PM",
       "3rd & 4th, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
     [
       "TBD",
@@ -679,6 +710,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "4:00 PM",
       "Finals, Court B",
+      "NA-NA",
+      "NA-NA",
     ],
   ],
 };
@@ -782,6 +815,7 @@ export default function Fixture() {
               />
             )
           )}
+          {sport == "Badminton: Women's" && <Brackets data={badmintonData} />}
           {sport == "Badminton: Men's" && <Brackets data={badmintonData} />}
           {sport == "Basketball" && <Brackets data={basketballData} />}
           {sport == "Football" && <Brackets data={footballData} />}

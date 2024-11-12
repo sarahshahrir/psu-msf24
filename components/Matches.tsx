@@ -77,7 +77,7 @@ export const Matches = ({
         // if sport is badminton or volleyball, show the score only if there is a score
 
         if (
-          (sport == "Badminton: Men's" || sport == "Volleyball") &&
+          (sport == "Badminton: Men's" || sport == "Badminton: Women's" || sport == "Volleyball") &&
           scoreArray.length > 0
         ) {
           setShowScore(!showScore);
@@ -103,7 +103,7 @@ export const Matches = ({
             <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
               {team1}
             </p>
-            {(sport == "Volleyball" || sport == "Badminton: Men's") &&
+            {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
               winner == "1" && (
                 <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
               )}
@@ -123,7 +123,7 @@ export const Matches = ({
             <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
               {team2}
             </p>
-            {(sport == "Volleyball" || sport == "Badminton: Men's") &&
+            {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
               winner == "2" && (
                 <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
               )}
