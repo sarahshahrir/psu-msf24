@@ -49,22 +49,6 @@ export const Footer = () => {
       </Button>
       <Button
         className={`ease-in-out duration-200 ${
-          sport == "Badminton: Men's" && "outline-double outline-4 outline-rose-700"
-        }`}
-        variant="outline"
-        onClick={() => {
-          setSport("Badminton: Men's");
-        }}
-      >
-        <Image
-          src={badminton}
-          alt="Picture of the author"
-          width={20}
-          height={20}
-        />
-      </Button>
-      <Button
-        className={`ease-in-out duration-200 ${
           sport == "Volleyball" && "outline-double outline-4 outline-rose-700"
         }`}
         variant="outline"
@@ -79,6 +63,24 @@ export const Footer = () => {
           height={20}
         />
       </Button>
+
+      <Button
+        className={`ease-in-out duration-200 ${
+          sport == "Badminton: Men's" && "outline-double outline-4 outline-rose-700"
+        }`}
+        variant="outline"
+        onClick={() => {
+          setSport("Badminton: Men's");
+        }}
+      >
+        <Image
+          src={badminton}
+          alt="Picture of the author"
+          width={20}
+          height={20}
+        />
+      </Button>
+      
       <Button
         className={`ease-in-out duration-200 ${
           sport == "Badminton: Women's" && "outline-double outline-4 outline-rose-700"
