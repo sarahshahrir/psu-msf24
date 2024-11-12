@@ -64,6 +64,25 @@ const createTheme = dynamic(
 //   svgBackground: "#FAFAFA",
 // });
 
+// Define Penn State color theme with PMS 648 Blue
+const PennStateTheme = createTheme({
+  textColor: { main: "#FFFFFF", highlighted: "#E5E5E5", dark: "#002D62" },
+  matchBackground: { wonColor: "#DAE1E7", lostColor: "#A0B6CF" },
+  score: {
+    background: { wonColor: "#A0B6CF", lostColor: "#A0B6CF" },
+    text: { highlightedWonColor: "#FFFFFF", highlightedLostColor: "#DAE1E7" },
+  },
+  border: {
+    color: "#002D62", // PMS 648 Blue for border
+    highlightedColor: "#E5E5E5", // Lighter highlight color
+  },
+  roundHeader: { backgroundColor: "#002D62", fontColor: "#FFFFFF" }, // PMS 648 Blue background, white text
+  connectorColor: "#002D62", // PMS 648 Blue connectors
+  connectorColorHighlight: "#FFFFFF", // White highlighted connectors
+  svgBackground: "#FFFFFF", // Light background for the SVG area
+});
+
+// Then apply the theme to the Brackets component
 export const Brackets = ({ data }) => {
   const finalWidth = 500;
   const finalHeight = 500;
@@ -74,19 +93,15 @@ export const Brackets = ({ data }) => {
       matches={data}
       matchComponent={Match}
       options={{
-        style: {
-          roundHeader: { backgroundColor: "#AAA" },
-          connectorColor: "#FF8C00",
-          connectorColorHighlight: "#000",
-        },
+        theme: PennStateTheme,
+        style: { backgroundColor: '#002D62 !important' }, // Inline style with `!important`
       }}
       svgWrapper={({ children, ...props }) => (
         <SVGViewer
           width={320}
           height={600}
           {...props}
-          SVGBackground={"rgba(0,0,0,0)"}
-          background={"rgba(0,0,0,0)"}
+          SVGBackground={"#FFFFFF"}
         >
           {children}
         </SVGViewer>
