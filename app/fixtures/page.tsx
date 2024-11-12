@@ -138,23 +138,23 @@ const matchDetails: ObjectType = {
   // [Team1, Team2, Date, Time, MatchType, Results <5-4>, WinningTeam]
   Football: [
     ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "1-5", "2"],
-    ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "-", "2"],
+    ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "7-2", "1"],
     [
       "NSP United",
       "Wisconsin",
       "Nov 16",
-      "9:40 AM",
+      "Now", // 9:10 AM
       "Group",
       "-",
-      "1",
+      "",
     ],
-    ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "-", "1"],
-    ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "-", "2"],
-    ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", "2"],
-    ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", "2"],
-    ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final 2", "-", "2"],
-    ["TBD", "TBD", "Nov 16", "2:00 PM", "3rd & 4th", "-", "1"],
-    ["TBD", "TBD", "Nov 16", "2:40 PM", "Final", "-", "2"],
+    ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "-", ""],
+    ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "-", ""],
+    ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", ""],
+    ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", ""],
+    ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final 2", "-", ""],
+    ["TBD", "TBD", "Nov 16", "2:00 PM", "3rd & 4th", "-", ""],
+    ["TBD", "TBD", "Nov 16", "2:40 PM", "Final", "-", ""],
   ],
 
   // [Team1, Team2, Date, Time, Court, Score, WinningTeam(1/2)]
@@ -164,7 +164,7 @@ const matchDetails: ObjectType = {
       "Penn State",
       "Santai Illini",
       "Nov 11",
-      "8:30 AM",
+      "Now",
       "Group, Court B",
       "-",
       "",

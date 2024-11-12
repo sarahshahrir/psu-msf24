@@ -125,7 +125,7 @@ export const Matches = ({
             </p>
             {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
               winner == "2" && (
-                <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
+                <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse"/>
               )}
             {(sport == "Football" || sport == "Basketball") && (
               <p className={`mr-2 ${winner == "2" && "font-bold"} `}>
@@ -178,9 +178,13 @@ export const Matches = ({
       ) : (
         <div className="flex flex-col items-center justify-center text-xs font-semibold text-center whitespace-nowrap">
           <div>
+          <div className={`${time === "Now" ? "text-green-700" : ""}`}>
             {time}
           </div>
-          <div>{venue}</div>
+          </div>
+          <div className={`${time === "Now" ? "text-green-700" : ""}`}>
+            {venue}
+          </div>
         </div>
       )}
     </div>
