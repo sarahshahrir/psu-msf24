@@ -12,7 +12,7 @@ import { sportState } from "@/components/atoms";
 export const Footer = () => {
   const [sport, setSport] = useRecoilState(sportState);
   const [isBadmintonDropdownOpen, setBadmintonDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null); // Define dropdownRef with useRef
+  const dropdownRef = useRef<HTMLDivElement | null>(null); // Define dropdownRef with useRef
 
   const toggleBadmintonDropdown = () => {
     setBadmintonDropdownOpen(!isBadmintonDropdownOpen);
