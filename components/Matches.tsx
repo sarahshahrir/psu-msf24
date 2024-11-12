@@ -72,10 +72,6 @@ export const Matches = ({
   return (
     <div
       onClick={() => {
-        // set the state for 3 second only and set it back to false
-        // if sport is football or basketball, show the score
-        // if sport is badminton or volleyball, show the score only if there is a score
-
         if (
           (sport == "Badminton: Men's" || sport == "Badminton: Women's" || sport == "Volleyball") &&
           scoreArray.length > 0
@@ -87,105 +83,105 @@ export const Matches = ({
           setShowScore(false);
         }, 2500);
       }}
-      className="relative p-4 border h-[90px] border-slate-400 items-center min-w-[320px] rounded-md grid grid-cols-3 gap-3 mb-4"
+      className={`relative p-4 border h-[90px] border-slate-400 items-center min-w-[320px] rounded-md grid grid-cols-3 gap-3 mb-4 
+      ${time === "Break" ? "bg-gray-100" : ""}`} // Apply gray background if time is "Break"
     >
-      {/* Team */}
-
-      {score1 ? (
-        <div className="flex flex-col gap-1 min-w-[140px] col-span-2 text-sm">
-          <div
-            className={`flex items-center ${
-              sport == "Football" || sport == "Basketball"
-                ? "justify-between"
-                : "gap-2 text-xs"
-            }`}
-          >
-            <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
-              {team1}
-            </p>
-            {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
-              winner == "1" && (
-                <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />
-              )}
-            {(sport == "Football" || sport == "Basketball") && (
-              <p className={`mr-2 ${winner == "1" && "font-bold" } `}>
-                {teamA_score1}
-              </p>
-            )}
-          </div>
-          <div
-            className={`flex items-center ${
-              sport == "Football" || sport == "Basketball"
-                ? "justify-between"
-                : "gap-2 text-xs"
-            }`}
-          >
-            <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
-              {team2}
-            </p>
-            {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
-              winner == "2" && (
-                <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse"/>
-              )}
-            {(sport == "Football" || sport == "Basketball") && (
-              <p className={`mr-2 ${winner == "2" && "font-bold"} `}>
-                {teamB_score1}
-              </p>
-            )}
-          </div>
+      {time === "Break" ? (
+        <div className="flex flex-col items-center justify-center col-span-3 text-lg font-semibold">
+          <p>Break</p>
+          <p className="text-sm">{venue}</p> {/* Displaying break time below "Break" */}
         </div>
       ) : (
-        <div className="flex flex-col gap-1 min-w-[140px] col-span-2 text-sm">
-          <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
-            {team1}
-          </p>
-          <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
-            {team2}
-          </p>
-        </div>
-      )}
-
-      {/* Separator */}
-      <Separator
-        orientation="vertical"
-        className="absolute top-0 h-10 translate-y-6 right-[114px] bg-slate-500"
-      />
-
-      {/* Date */}
-      {showScore ? (
-        <Transition
-          appear={true}
-          show={showScore}
-          enter="transition-opacity  ease-linear duration-500"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity  ease-linear duration-500"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="flex items-center justify-center gap-2 ease-in-out ">
-            {scoreArray.map((score, index) => (
-              // convert score to integer
-              // const teamA = parseInt(score[0]);
-              // const teamB = parseInt(score[1]);
-              <div key={index} className="flex flex-col text-sm">
-                <p className={`${winner == "1" && "font-bold"}`}>{score[0]}</p>
-                <p className={`${winner == "2" && "font-bold"}`}>{score[1]}</p>
+        <>
+          {/* Team */}
+          {score1 ? (
+            <div className="flex flex-col gap-1 min-w-[140px] col-span-2 text-sm">
+              <div
+                className={`flex items-center ${
+                  sport == "Football" || sport == "Basketball" ? "justify-between" : "gap-2 text-xs"
+                }`}
+              >
+                <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
+                  {team1}
+                </p>
+                {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
+                  winner == "1" && <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />}
+                {(sport == "Football" || sport == "Basketball") && (
+                  <p className={`mr-2 ${winner == "1" && "font-bold"}`}>
+                    {teamA_score1}
+                  </p>
+                )}
               </div>
-            ))}
-          </div>
-        </Transition>
-      ) : (
-        <div className="flex flex-col items-center justify-center text-xs font-semibold text-center whitespace-nowrap">
-          <div>
-          <div className={`${time === "Now" ? "text-green-700" : ""}`}>
-            {time}
-          </div>
-          </div>
-          <div className={`${time === "Now" ? "text-green-700" : ""}`}>
-            {venue}
-          </div>
-        </div>
+              <div
+                className={`flex items-center ${
+                  sport == "Football" || sport == "Basketball" ? "justify-between" : "gap-2 text-xs"
+                }`}
+              >
+                <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
+                  {team2}
+                </p>
+                {(sport == "Volleyball" || sport == "Badminton: Men's" || sport == "Badminton: Women's") &&
+                  winner == "2" && <BiCrown className="w-4 h-4 text-yellow-600 animate-pulse" />}
+                {(sport == "Football" || sport == "Basketball") && (
+                  <p className={`mr-2 ${winner == "2" && "font-bold"}`}>
+                    {teamB_score1}
+                  </p>
+                )}
+              </div>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1 min-w-[140px] col-span-2 text-sm">
+              <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
+                {team1}
+              </p>
+              <p className={`${sport == "Badminton: Women's" && "truncate max-w-[170px]"}`}>
+                {team2}
+              </p>
+            </div>
+          )}
+
+          {/* Separator (only for non-break events) */}
+          {time !== "Break" && (
+            <Separator
+              orientation="vertical"
+              className="absolute top-0 h-10 translate-y-6 right-[114px] bg-slate-500"
+            />
+          )}
+
+          {/* Date */}
+          {showScore ? (
+            <Transition
+              appear={true}
+              show={showScore}
+              enter="transition-opacity ease-linear duration-500"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-opacity ease-linear duration-500"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="flex items-center justify-center gap-2 ease-in-out">
+                {scoreArray.map((score, index) => (
+                  <div key={index} className="flex flex-col text-sm">
+                    <p className={`${winner == "1" && "font-bold"}`}>{score[0]}</p>
+                    <p className={`${winner == "2" && "font-bold"}`}>{score[1]}</p>
+                  </div>
+                ))}
+              </div>
+            </Transition>
+          ) : (
+            <div className="flex flex-col items-center justify-center text-xs font-semibold text-center whitespace-nowrap">
+              <div>
+                <div className={`${time === "Now" ? "text-green-700" : ""}`}>
+                  {time}
+                </div>
+              </div>
+              <div className={`${time === "Now" ? "text-green-700" : ""}`}>
+                {venue}
+              </div>
+            </div>
+          )}
+        </>
       )}
     </div>
   );

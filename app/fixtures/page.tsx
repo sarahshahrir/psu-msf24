@@ -137,7 +137,7 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, MatchType, Results <5-4>, WinningTeam]
   Football: [
-    ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "1-5", "2"],
+    ["NSP United", "Default Name", "Nov 16", "", "Group", "1-5", "2"],
     ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "7-2", "1"],
     [
       "NSP United",
@@ -151,6 +151,7 @@ const matchDetails: ObjectType = {
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "-", ""],
     ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "-", ""],
     ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", ""],
+    ["", "", "Nov 16", "Break", "11:40 AM - 12:30 PM", "-", ""],
     ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", ""],
     ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final 2", "-", ""],
     ["TBD", "TBD", "Nov 16", "2:00 PM", "3rd & 4th", "-", ""],
@@ -216,8 +217,10 @@ const matchDetails: ObjectType = {
       "-",
       "",
     ],
+    ["", "", "Nov 11", "Break", "11:05 AM - 11:25 AM", "-", ""],
     ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 1, Court A", "-", ""],
     ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 2, Court B", "-", ""],
+    ["", "", "Nov 11", "Break", "12:10 PM - 1:00 PM", "-", ""],
     ["TBD", "TBD", "Nov 11", "1:00 PM", "3rd & 4th, Court A", "-", ""],
     ["TBD", "TBD", "Nov 11", "1:55 PM", "Final, Court A", "-", ""],
   ],
@@ -300,6 +303,15 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:10 AM",
       "Group, Court A",
+      "NA-NA",
+      "",
+    ],
+    [
+      "",
+      "",
+      "Nov 11",
+      "Break",
+      "11:30 AM - 12:30 PM",
       "NA-NA",
       "",
     ],
@@ -529,6 +541,15 @@ const matchDetails: ObjectType = {
       "",
     ],
     [
+      "",
+      "",
+      "Nov 11",
+      "Break",
+      "12:00 PM - 1:00 PM",
+      "",
+      "",
+    ],
+    [
       "TBD",
       "TBD",
       "Nov 11",
@@ -652,6 +673,15 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "11:10 AM",
       "Group, Court B",
+      "NA-NA",
+      ""
+    ],
+    [
+      "",
+      "",
+      "Nov 12",
+      "Break",
+      "11:30 AM - 12:30 PM",
       "NA-NA",
       ""
     ],
