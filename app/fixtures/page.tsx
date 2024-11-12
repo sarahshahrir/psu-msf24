@@ -15,6 +15,7 @@ import {
   badmintonMData,
   badmintonWData,
   basketballData,
+  volleyballData
 } from "@/components/dummy";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useRecoilState } from "recoil";
@@ -150,10 +151,10 @@ const matchDetails: ObjectType = {
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "-", "1"],
     ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "-", "2"],
     ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", "2"],
-    ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final", "-", "2"],
-    ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final", "-", "2"],
+    ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", "2"],
+    ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final 2", "-", "2"],
     ["TBD", "TBD", "Nov 16", "2:00 PM", "3rd & 4th", "-", "1"],
-    ["TBD", "TBD", "Nov 16", "2:40 PM", "Finals", "-", "2"],
+    ["TBD", "TBD", "Nov 16", "2:40 PM", "Final", "-", "2"],
   ],
 
   // [Team1, Team2, Date, Time, Court, Score, WinningTeam(1/2)]
@@ -215,10 +216,10 @@ const matchDetails: ObjectType = {
       "-",
       "",
     ],
-    ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi, Court A", "-", ""],
-    ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi, Court B", "-", ""],
+    ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 1, Court A", "-", ""],
+    ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 2, Court B", "-", ""],
     ["TBD", "TBD", "Nov 11", "1:00 PM", "3rd & 4th, Court A", "-", ""],
-    ["TBD", "TBD", "Nov 11", "1:55 PM", "Finals, Court A", "-", ""],
+    ["TBD", "TBD", "Nov 11", "1:55 PM", "Final, Court A", "-", ""],
   ],
   "Badminton: Men's": [
     [
@@ -411,7 +412,7 @@ const matchDetails: ObjectType = {
       "TBD",
       "Nov 11",
       "4:00 PM",
-      "Finals, Court A",
+      "Final, Court A",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -532,7 +533,7 @@ const matchDetails: ObjectType = {
       "TBD",
       "Nov 11",
       "1:00 PM",
-      "Semi, Court 1",
+      "Semi 1, Court 1",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -543,7 +544,7 @@ const matchDetails: ObjectType = {
       "TBD",
       "Nov 11",
       "2:00 PM",
-      "Semi, Court 1",
+      "Semi 2, Court 1",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -565,7 +566,7 @@ const matchDetails: ObjectType = {
       "TBD",
       "Nov 11",
       "3:00 PM",
-      "Finals, Court 1",
+      "Final, Court 1",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -686,7 +687,7 @@ const matchDetails: ObjectType = {
       "TBD",
       "Nov 12",
       "2:30 PM",
-      "Semi, Court B",
+      "Semi 1, Court B",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -696,8 +697,8 @@ const matchDetails: ObjectType = {
       "TBD",
       "TBD",
       "Nov 12",
-      "12:50 AM",
-      "Semi, Court B",
+      "3:00 PM",
+      "Semi 2, Court B",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -719,7 +720,7 @@ const matchDetails: ObjectType = {
       "TBD",
       "Nov 12",
       "4:00 PM",
-      "Finals, Court B",
+      "Final, Court B",
       "NA-NA",
       "NA-NA",
       "NA-NA",
@@ -827,10 +828,11 @@ export default function Fixture() {
               />
             )
           )}
-          {sport == "Badminton: Women's" && <Brackets data={badmintonMData} />}
-          {sport == "Badminton: Men's" && <Brackets data={badmintonWData} />}
+          {sport == "Badminton: Women's" && <Brackets data={badmintonWData} />}
+          {sport == "Badminton: Men's" && <Brackets data={badmintonMData} />}
           {sport == "Basketball" && <Brackets data={basketballData} />}
           {sport == "Football" && <Brackets data={footballData} />}
+          {sport == "Volleyball" && <Brackets data={volleyballData} />}
         </TabsContent>
       </Tabs>
 

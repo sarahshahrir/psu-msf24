@@ -12,7 +12,7 @@ export const Standings = ({ title, teams, scores }: Props) => {
   return (
     <div className="relative border mb-4 border-slate-400 items-center min-w-[320px] flex flex-col  rounded-md ">
       {/* Title */}
-      <div className="flex items-center justify-center w-full p-1 text-lg font-bold text-white bg-red-700 flex-center rounded-t-md">
+      <div className="flex items-center justify-center w-full p-1 text-lg font-bold text-white bg-customBlue flex-center rounded-t-md">
         <p>{title}</p>
       </div>
 
