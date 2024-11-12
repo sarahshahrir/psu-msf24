@@ -4,8 +4,8 @@ import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import { Analytics } from "@vercel/analytics/react";
-
 import RecoilRootWrapper from "@/app/recoil";
+import Announcement from "@/components/Announcement"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +24,7 @@ export default function RootLayout({
       <RecoilRootWrapper>
         <Theme>
           <body className={inter.className}>
+          <Announcement /> {/* Add the Announcement component here */}
             {children}
             <Analytics />
           </body>
