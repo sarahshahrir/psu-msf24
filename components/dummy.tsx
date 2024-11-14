@@ -198,14 +198,14 @@ export const badmintonMData: Match[] = [
     participants: [
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "2",
+        resultText: "",
         isWinner: true,
         status: "PLAYED",
         name: "TBD",
       },
       {
         id: "76ac9113-a541-4b6a-a189-7b5ad43729bd",
-        resultText: "1",
+        resultText: "",
         isWinner: true,
         status: "PLAYED",
         name: "TBD",
