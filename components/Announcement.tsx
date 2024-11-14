@@ -58,7 +58,7 @@ const Announcement = () => {
       {isOpen && hasAnnouncement && (
         <div className="mt-2 w-64 bg-blue-600 text-white p-4 rounded-md shadow-md">
           <p className="text-sm font-medium">
-              No announcements now.
+              Announcement:
               </p>
           <button
             onClick={markAsRead} // Close the announcement when clicked
@@ -73,7 +73,7 @@ const Announcement = () => {
       {showNoAnnouncementMessage && !hasAnnouncement && (
         <div className="mt-2 w-64 bg-white text-black p-4 rounded-md shadow-md">
           <p className="text-sm font-medium">
-            🎉 Welcome to our event! Check out the latest announcements here.
+            No new announcements.
           </p>
           <button
             onClick={closeNoAnnouncementMessage} // Close the "No announcement" message
