@@ -55,7 +55,8 @@ export default function Home() {
       {/* Content on top of video */}
       <div className="relative z-10 flex items-center gap-4">
         <Image className="rounded-full" src={msc} alt="Logo 1" width={50} height={50} />
-        <h1 className="text-white md:text-[48px] font-extrabold text-4xl">MSF 24'</h1>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+<h1 className="text-white md:text-[48px] font-extrabold text-4xl">MSF 24'</h1>
         <Image className="rounded-full" src={namsa} alt="Logo 2" width={50} height={50} />
       </div>
 
