@@ -49,7 +49,7 @@ export default function Home() {
           preload="auto"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-customBlue opacity-60"></div> {/* Semi-transparent overlay */}
+        <div className="absolute inset-0 bg-customBlue opacity-70"></div> {/* Semi-transparent overlay */}
       </div>
 
       {/* Content on top of video */}
