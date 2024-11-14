@@ -72,7 +72,7 @@ export default function Home() {
       {/* Central image */}
       <Image
         onClick={() => setIsClicked(!isClicked)}
-        className="relative z-10 rounded-md mt-8 translate-y-[-20px] md:translate-y-[0px] transition ease-in-out duration-700"
+        className="rounded-md translate-y-[-10px] transition ease-in-out duration-700"
         src={pic}
         alt="Event Group Picture"
         width={300}
@@ -80,13 +80,19 @@ export default function Home() {
       />
 
       {/* Footer buttons */}
-      <div className="relative z-10 flex items-center gap-3">
-        <Button variant="outline">
-          <Link href="/fixtures">Fixtures</Link>
-        </Button>
-        <Button variant="outline">
-          <a href="https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7">Pictures</a>
-        </Button>
+      <div className="relative z-10 flex flex-col items-center gap-2">
+        <Link href="/fixtures">
+          <button className="text-white font-semibold flex items-center gap-1">
+            <span className="hover:underline decoration-white">Fixtures</span>
+            <span className="text-lg">›</span> {/* Larger arrow without underline */}
+          </button> 
+        </Link>
+        <a href="https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7">
+          <button className="text-white font-semibold flex items-center gap-1">
+            <span className="hover:underline decoration-white">Pictures</span>
+            <span className="text-lg">›</span> {/* Larger arrow without underline */}
+          </button>
+        </a>
       </div>
     </main>
   );
