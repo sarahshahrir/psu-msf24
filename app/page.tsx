@@ -14,8 +14,14 @@ export default function Home() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   const deadline = "November, 11, 2023";
+
+  const handlePicturesClick = () => {
+    setShowMessage(true); // Show the message when the Pictures button is clicked
+    setTimeout(() => setShowMessage(false), 3000); // Hide the message after 3 seconds
+  };
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -79,6 +85,13 @@ export default function Home() {
         height={300}
       />
 
+      {/* Message box */}
+      {showMessage && (
+        <div className="absolute bottom-20 p-4 bg-red-500 text-white rounded-md text-center">
+          No pictures yet! Come back after the event for pictures.
+        </div>
+      )}
+
       {/* Footer buttons */}
       <div className="relative z-10 flex flex-col items-center gap-2">
         <Link href="/fixtures">
@@ -87,12 +100,18 @@ export default function Home() {
             <span className="text-lg">›</span> {/* Larger arrow without underline */}
           </button> 
         </Link>
-        <a href="https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7">
-          <button className="text-white font-semibold flex items-center gap-1">
+        {/* Uncomment when lines below when link is available */}
+        {/* <a href="https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7">
+          <button className="text-white font-semibold flex items-center gap-1"> */}
+
+          {/* Delete one line below when link is available */}
+          <button onClick={handlePicturesClick} className="text-white font-semibold flex items-center gap-1">
             <span className="hover:underline decoration-white">Pictures</span>
             <span className="text-lg">›</span> {/* Larger arrow without underline */}
           </button>
-        </a>
+
+        {/* Also uncomment below line when link is available */}
+        {/* </a> */}
       </div>
     </main>
   );
