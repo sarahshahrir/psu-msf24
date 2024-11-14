@@ -62,17 +62,17 @@ export default function Home() {
 
       {/* Event details */}
       <div className="relative z-10 flex items-center justify-center gap-4 mt-2">
-        <h2 className="text-lg font-semibold text-white md:text-2xl">Penn State</h2>
-        <div className="h-[30px] w-0.5 bg-gray-300 opacity-80"></div>
-        <h2 className="text-lg font-semibold text-white md:text-2xl">16 Nov</h2>
-        <div className="h-[30px] w-0.5 bg-gray-300 opacity-80"></div>
-        <h2 className="text-lg font-semibold text-white md:text-2xl">15 Universities</h2>
+        <h2 className="text-sm font-semibold text-white md:text-lg">Penn State</h2>
+        <div className="h-[20px] w-0.5 bg-gray-300 opacity-80"></div>
+        <h2 className="text-sm font-semibold text-white md:text-lg">16 Nov</h2>
+        <div className="h-[20px] w-0.5 bg-gray-300 opacity-80"></div>
+        <h2 className="text-sm font-semibold text-white md:text-lg">15 Universities</h2>
       </div>
 
       {/* Central image */}
       <Image
         onClick={() => setIsClicked(!isClicked)}
-        className="relative z-10 rounded-md mt-12 translate-y-[-20px] md:translate-y-[0px] transition ease-in-out duration-700"
+        className="relative z-10 rounded-md mt-8 translate-y-[-20px] md:translate-y-[0px] transition ease-in-out duration-700"
         src={pic}
         alt="Event Group Picture"
         width={300}
