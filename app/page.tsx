@@ -4,9 +4,7 @@ import Image from "next/image";
 import msc from "@/public/msc.png";
 import namsa from "@/public/namsa.jpeg";
 import pic from "@/public/pic.jpeg";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -39,94 +37,54 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex h-[100vh] flex-col items-center justify-center md:p-24 px-4 gap-6 py-4 ">
-      <video
-        src="https://res.cloudinary.com/dx0kyrggg/video/upload/v1699460136/These_are_Our_Values_UW-Madison_commercial_n3bahb.mp4"
-        loop
-        autoPlay
-        muted
-        playsInline
-        preload="auto"
-      />
-      <div className="flex items-center gap-2 translate-x-[-10px]  md:translate-y-3 translate-y-[-50px]">
-        <Image className="rounded-full" src={msc} alt="Picture of the author" width={50} height={50} />
-        <Image
-          className="rounded-full"
-          src={namsa}
-          alt="Picture of the author"
-          width={50}
-          height={50}
+    <main className="relative flex h-[100vh] flex-col items-center justify-center md:p-24 px-4 gap-6 py-4">
+      {/* Video background with overlay */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          src="https://res.cloudinary.com/dx0kyrggg/video/upload/v1699460136/These_are_Our_Values_UW-Madison_commercial_n3bahb.mp4"
+          loop
+          autoPlay
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-customBlue opacity-60"></div> {/* Semi-transparent overlay */}
       </div>
 
-      <h1 className="text-border-white text-border-size-1 text-black md:text-[100px] md:my-6  font-extrabold text-4xl md:translate-y-0 translate-y-[-60px]">
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        MSF 24'
-      </h1>
-
-      {/* details */}
-      <div className="flex items-center justify-center md:gap-5 gap-2 md:translate-y-0 translate-y-[-60px]">
-        <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl ">
-          Penn State
-        </h1>
-        <div className="inline-block h-[30px]  w-0.5 self-stretch bg-slate-600 opacity-100 dark:opacity-50"></div>
-        <div className="flex items-center gap-1 md:gap-3 ">
-          <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl ">
-            16
-          </h1>
-          <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl">
-            Nov
-          </h1>
-        </div>
-        <div className="inline-block h-[30px] w-0.5 self-stretch bg-slate-600  opacity-100 dark:opacity-50"></div>
-        <div className="flex items-center gap-1 md:gap-3">
-          <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl">
-            15
-          </h1>
-          <h1 className="text-sm font-extrabold text-black text-border-white text-border-size-1 md:text-2xl">
-            Universities
-          </h1>
-        </div>
+      {/* Content on top of video */}
+      <div className="relative z-10 flex items-center gap-4">
+        <Image className="rounded-full" src={msc} alt="Logo 1" width={50} height={50} />
+        <h1 className="text-white md:text-[48px] font-extrabold text-4xl">MSF 24'</h1>
+        <Image className="rounded-full" src={namsa} alt="Logo 2" width={50} height={50} />
       </div>
-      {/* display the countdown */}
-      {/* <div className="flex flex-col"> */}
-      {/* numbers */}
-      {/* <div className="grid grid-cols-4 text-center text-border-white text-border-size-1 text-black font-extrabold text-3xl md:translate-y-0 translate-y-[-60px] min-w-[250px]">
-          <p className="text-rose-600">{days}</p>
-          <p>{hours}</p>
-          <p>{minutes}</p>
-          <p>{seconds}</p>
-        </div> */}
 
-      {/* stats */}
-      {/* <div className="grid grid-cols-4 text-center text-border-white text-border-size-1 text-black  font-extrabold text-xs md:translate-y-0 translate-y-[-60px] min-w-[250px]">
-          <p>DAY</p>
-          <p>HRS</p>
-          <p>MIN</p>
-          <p>SEC</p>
-        </div> */}
-      {/*    </div>*/}
+      {/* Event details */}
+      <div className="relative z-10 flex items-center justify-center gap-4 mt-2">
+        <h2 className="text-lg font-semibold text-white md:text-2xl">Penn State</h2>
+        <div className="h-[30px] w-0.5 bg-gray-300 opacity-80"></div>
+        <h2 className="text-lg font-semibold text-white md:text-2xl">16 Nov</h2>
+        <div className="h-[30px] w-0.5 bg-gray-300 opacity-80"></div>
+        <h2 className="text-lg font-semibold text-white md:text-2xl">15 Universities</h2>
+      </div>
+
+      {/* Central image */}
       <Image
         onClick={() => setIsClicked(!isClicked)}
-        className={`rounded-md translate-y-[-50px] md:translate-y-[0px]  ease-in-out duration-700 ${
-          !isClicked && "blur-sm animate-pulse"
-        } `}
+        className="relative z-10 rounded-md mt-12 translate-y-[-20px] md:translate-y-[0px] transition ease-in-out duration-700"
         src={pic}
-        alt="Picture of the author"
+        alt="Event Group Picture"
         width={300}
         height={300}
       />
-      <div className="fixed flex items-center justify-center gap-3 bottom-8">
+
+      {/* Footer buttons */}
+      <div className="relative z-10 flex items-center gap-3 mt-8">
         <Button variant="outline">
           <Link href="/fixtures">Fixtures</Link>
         </Button>
         <Button variant="outline">
-          <a
-            href="
-          https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7"
-          >
-            Pictures
-          </a>
+          <a href="https://photos.app.goo.gl/SNFp9Zw7MHQhpqGe7">Pictures</a>
         </Button>
       </div>
     </main>
