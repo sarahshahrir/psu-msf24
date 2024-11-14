@@ -137,13 +137,13 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, MatchType, Results <5-4>, WinningTeam]
   Football: [
-    ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "1-5", "2"],
-    ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "7-2", "1"],
+    ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "-", ""],
+    ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "-", ""],
     [
       "NSP United",
       "Wisconsin",
       "Nov 16",
-      "Now", // 9:40 AM
+      "9:40 AM",
       "Group",
       "-",
       "",
@@ -160,22 +160,22 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, Court, Score, WinningTeam(1/2)]
   Basketball: [
-    ["Ben 10", "Wisconsin", "Nov 11", "8:30 AM", "Group, Court A", "3-4", "2"],
+    ["Ben 10", "Wisconsin", "Nov 11", "8:30 AM", "Group, Court A", "-", ""],
     [
       "Penn State",
       "Santai Illini",
       "Nov 11",
       "8:30 AM",
       "Group, Court B",
-      "8-7",
-      "1",
+      "-",
+      "",
     ],
-    ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "Now", "Group, Court A", "-", ""], // 9:05 AM
+    ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "9:05 AM", "Group, Court A", "-", ""],
     [
       "Santai Illini",
       "Ben 10",
       "Nov 11",
-      "Now", // 9:05 AM
+      "9:05 AM",
       "Group, Court B",
       "-",
       "",
@@ -231,14 +231,14 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "8:30 AM",
       "Group, Court A",
-      "17-2",
-      "1",
+      "-",
+      "",
     ],
     [
       "Izzul & Jason",
       "Nabil & Ralf",
       "Nov 11",
-      "Now", // 8:50 AM
+      "8:50 AM",
       "Group, Court A",
       "NA-NA",
       "",
@@ -438,8 +438,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 1",
-      "15-10",
-      "1",
+      "-",
+      "",
     ],
     [
       "Penn State B",
@@ -447,14 +447,14 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 2",
-      "9-17",
-      "2",
+      "-",
+      "",
     ],
     [
       "Denmarks National Mixed",
       "Free Agent",
       "Nov 11",
-      "Now", // 9:30 AM
+      "9:30 AM",
       "Group, Court 1",
       "NA-NA",
       "",
@@ -463,7 +463,7 @@ const matchDetails: ObjectType = {
       "The Nuthouse",
       "Kedutaan dan Konsular",
       "Nov 11",
-      "Now", // 9:30 AM
+      "9:30 AM",
       "Group, Court 2",
       "NA-NA",
       "",
@@ -601,14 +601,14 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "8:30 AM",
       "Group, Court B",
-      "10-15",
-      "2"
+      "-",
+      ""
     ],
     [
       "Nadia & Nadia",
       "Farhah & Izza",
       "Nov 12",
-      "Now", // 8:50 AM
+      "8:50 AM",
       "Group, Court B",
       "NA-NA",
       ""
