@@ -87,8 +87,8 @@ export default function Home() {
 
       {/* Message box */}
       {showMessage && (
-        <div className="absolute bottom-20 p-4 bg-red-500 text-white rounded-md text-center">
-          No pictures yet! Come back after the event for pictures.
+        <div className="absolute bottom-20 px-4 py-2 bg-red-600 text-white rounded-md text-center max-w-xs mx-auto">
+          Pictures are coming soon!
         </div>
       )}
 
