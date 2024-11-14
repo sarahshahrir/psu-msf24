@@ -62,7 +62,7 @@ const Announcement = () => {
               </p>
           <button
             onClick={markAsRead} // Close the announcement when clicked
-            className="mt-2 text-xs underline hover:text-gray-300 focus:outline-none"
+            className="mt-2 text-xs text-gray-300 underline hover:text-gray-300 focus:outline-none"
           >
             Close
           </button>
@@ -77,7 +77,7 @@ const Announcement = () => {
           </p>
           <button
             onClick={closeNoAnnouncementMessage} // Close the "No announcement" message
-            className="mt-2 text-xs underline hover:text-gray-300 focus:outline-none"
+            className="mt-2 text-xs text-gray-500 underline hover:text-gray-300 focus:outline-none"
           >
             Close
           </button>
