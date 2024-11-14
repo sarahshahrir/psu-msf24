@@ -80,7 +80,7 @@ export default function Home() {
       />
 
       {/* Footer buttons */}
-      <div className="relative z-10 flex items-center gap-3 mt-8">
+      <div className="relative z-10 flex items-center gap-3">
         <Button variant="outline">
           <Link href="/fixtures">Fixtures</Link>
         </Button>
