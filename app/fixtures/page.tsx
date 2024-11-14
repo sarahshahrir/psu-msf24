@@ -231,7 +231,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "8:30 AM",
       "Group, Court A",
-      "-",
+      "NA-NA",
       "",
     ],
     [
@@ -601,7 +601,7 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "8:30 AM",
       "Group, Court B",
-      "-",
+      "NA-NA",
       ""
     ],
     [
