@@ -47,7 +47,7 @@ export default function Home() {
       {/* Video background with overlay */}
       <div className="absolute inset-0 overflow-hidden">
         <video
-          src="https://res.cloudinary.com/dx0kyrggg/video/upload/v1699460136/These_are_Our_Values_UW-Madison_commercial_n3bahb.mp4"
+          src="https://res.cloudinary.com/drddwtaec/video/upload/v1731607265/WhatsApp_Video_2024-11-14_at_12.43.18_PM_uebc5e.mp4"
           loop
           autoPlay
           muted
