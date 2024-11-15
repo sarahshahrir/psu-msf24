@@ -407,15 +407,15 @@ export const footballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "7",
+        resultText: "",
         isWinner: true,
         status: "PLAYED",
         name: "TBD",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
-        resultText: "1",
-        isWinner: false,
+        resultText: "",
+        isWinner: true,
         status: "PLAYED",
         name: "TBD",
       },
