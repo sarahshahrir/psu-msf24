@@ -74,11 +74,11 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       [
-        "Hadwan & Amir",
         "Danish & Jinyao",
+        "Hadwan & Amir",
         "En. Syahrul & En. Eshraq",
       ],
-      ["0-", "1-1", "0-"],
+      ["1-1", "0-", "0-"],
     ],
     "Group B": [
       [
@@ -109,12 +109,12 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
-      ["Penn State", "Wisconsin", "Ben 10", "Santai Illini"],
-      ["1-", "1-", "0-", "0-"], // Ben 10 Santai Illini 6-6
+      ["Wisconsin", "Penn State", "Ben 10", "Santai Illini"],
+      ["1-1", "1-0", "0-", "0-"], // Ben 10 Santai Illini 6-6
     ],
     "Group B": [
       ["Bayang Muslihat", "The Nuthouse", "Asam Pedas Pollock"],
-      ["0-", "-", "1-"],
+      ["0-", "1-", "1-0"],
     ],
   },
   "Badminton: Women's": {
@@ -180,15 +180,15 @@ const matchDetails: ObjectType = {
       "17-17", // TIE!!
       "",
     ],
-    ["Penn State", "Wisconsin", "Nov 11", "9:40 AM", "Group, Court A", "-", ""],
+    ["Penn State", "Wisconsin", "Nov 11", "9:40 AM", "Group, Court A", "20-25", "2"],
     [
       "Asam Pedas Pollock",
       "The Nuthouse",
       "Nov 11",
       "9:40 AM",
       "Group, Court B",
-      "-",
-      "",
+      "14-52",
+      "2",
     ],
     [
       "Santai Illini",
