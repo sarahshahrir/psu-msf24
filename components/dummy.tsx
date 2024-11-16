@@ -173,15 +173,15 @@ export const badmintonMData: Match[] = [
     participants: [
       {
         id: "c2f551b4-2d5a-4c59-86a8-df575805256a",
-        resultText: "",
+        resultText: "30",
         isWinner: true,
         status: "PLAYED",
         name: "Shahrunizam & Khairil",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
-        resultText: "",
-        isWinner: true,
+        resultText: "17",
+        isWinner: false,
         status: "PLAYED",
         name: "Airil & Akmal",
       },
@@ -198,15 +198,15 @@ export const badmintonMData: Match[] = [
     participants: [
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "",
+        resultText: "30",
         isWinner: true,
         status: "PLAYED",
         name: "Affiq & Vincent",
       },
       {
         id: "76ac9113-a541-4b6a-a189-7b5ad43729bd",
-        resultText: "",
-        isWinner: true,
+        resultText: "26",
+        isWinner: false,
         status: "PLAYED",
         name: "Khaiyyum & Eirfann",
       },
@@ -463,7 +463,7 @@ export const volleyballData: Match[] = [
         resultText: "",
         isWinner: true,
         status: null,
-        name: "TBD",
+        name: "The Nuthouse",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
@@ -485,14 +485,14 @@ export const volleyballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "",
-        isWinner: true,
+        resultText: "Lose",
+        isWinner: false,
         status: "PLAYED",
         name: "Cendol VB",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
-        resultText: "",
+        resultText: "Win",
         isWinner: true,
         status: "PLAYED",
         name: "The Nuthouse",
