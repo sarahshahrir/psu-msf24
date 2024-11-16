@@ -63,11 +63,11 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       ["Cendol VB", "Denmarks National Mixed", "Free Agent", "Penn State C"],
-      ["1-1-1", "0-1-", "1-0-0", "0-0-"],
+      ["1-1-1", "0-0-1", "1-0-0", "0-1-0"],
     ],
     "Group B": [
       ["Penn State B", "Spartan Blues", "The Nuthouse", "Kedutaan dan Konsular"],
-      ["1-1-0", "0-1-", "1-0-", "0-0-1"],
+      ["1-1-0", "0-1-0", "1-0-1", "0-0-1"],
     ],
   },
   "Badminton: Men's": {
@@ -537,8 +537,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:30 AM",
       "Group, Court 2",
-      "NA-NA",
-      "",
+      "21-25",
+      "2",
     ],
     [
       "",
