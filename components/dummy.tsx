@@ -460,14 +460,14 @@ export const volleyballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "",
-        isWinner: true,
+        resultText: "Lose",
+        isWinner: false,
         status: null,
         name: "The Nuthouse",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "",
+        resultText: "Win",
         isWinner: true,
         status: null,
         name: "Penn State B",
