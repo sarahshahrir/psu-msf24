@@ -55,15 +55,15 @@ const standingDetails: Group = {
       ["0--", "1--", "1-0-"],
     ],
     "Group B": [
-      ["NSP City", "ARBB FC", "PUI PUI FC"],
-      ["1--", "0--", "--"],
+      ["NSP City", "PUI PUI FC", "ARBB FC"],
+      ["1--", "1--", "0-0-"],
     ],
   },
   Volleyball: {
     // every array represent a group and its point or score
     "Group A": [
-      ["Cendol VB", "Penn State C", "Denmarks National Mixed", "Free Agent"],
-      ["1-1", "0-", "0-", "1-0"],
+      ["Cendol VB", "Denmarks National Mixed", "Free Agent", "Penn State C"],
+      ["1-1", "0-1", "1-0", "0-0"],
     ],
     "Group B": [
       ["Penn State B", "Spartan Blues", "The Nuthouse", "Kedutaan dan Konsular"],
@@ -150,7 +150,7 @@ const matchDetails: ObjectType = {
     ],
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "5-0", "1"],
     ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "0-1", "2"],
-    ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", ""],
+    ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "0-1", "1"],
     ["", "", "Nov 16", "Break", "11:40 AM - 12:30 PM", "-", ""],
     ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", ""],
     ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final 2", "-", ""],
@@ -510,8 +510,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 1",
-      "NA-NA",
-      "",
+      "20-25",
+      "2",
     ],
     [
       "Penn State B",
