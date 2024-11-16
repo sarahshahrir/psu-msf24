@@ -218,11 +218,11 @@ const matchDetails: ObjectType = {
       "1",
     ],
     ["", "", "Nov 11", "Break", "11:05 AM - 11:25 AM", "-", ""],
-    ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 1, Court A", "-", ""],
-    ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 2, Court B", "-", ""],
+    ["Asam Pedas Pollock", "Wisconsin", "Nov 11", "11:25 AM", "Semi 1, Court A", "14-42", "2"],
+    ["The Nuthouse", "Penn State", "Nov 11", "11:25 AM", "Semi 2, Court B", "29-18", "1"],
     ["", "", "Nov 11", "Break", "12:10 PM - 1:00 PM", "-", ""],
-    ["TBD", "TBD", "Nov 11", "1:00 PM", "3rd & 4th, Court A", "-", ""],
-    ["TBD", "TBD", "Nov 11", "1:55 PM", "Final, Court A", "-", ""],
+    ["Asam Pedas Pollock", "Penn State", "Nov 11", "1:00 PM", "3rd & 4th, Court A", "-", ""],
+    ["Wisconsin", "The Nuthouse", "Nov 11", "1:55 PM", "Final, Court A", "-", ""],
   ],
   "Badminton: Men's": [
     [
