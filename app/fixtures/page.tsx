@@ -91,7 +91,7 @@ const standingDetails: Group = {
     "Group C": [
       [
         "Affiq & Adib",
-        "En. Shahrunizam & En. Khairil",
+        "Shahrunizam & Khairil",
         "Adam & Danial"
       ],
       ["1-", "1-", "0-0"],
@@ -281,7 +281,7 @@ const matchDetails: ObjectType = {
     ],
     [
       "Adam & Danial",
-      "En. Shaharunizam & En. Khairil",
+      "Shaharunizam & Khairil",
       "Nov 11",
       "10:30 AM",
       "Group, Court A",
@@ -326,7 +326,7 @@ const matchDetails: ObjectType = {
     ],
     [
       "Affiq & Adib",
-      "En. Shaharuniza, & En. Khairil",
+      "Shaharunizam, & Khairil",
       "Nov 11",
       "12:50 PM",
       "Group, Court A",
