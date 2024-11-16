@@ -229,9 +229,9 @@ const matchDetails: ObjectType = {
       "Hadwan & Amir",
       "Danish & Jinyao",
       "Nov 11",
-      "Now", // 8:30 AM
+      "8:30 AM",
       "Group, Court A",
-      "NA-NA",
+      "12-30",
       "",
     ],
     [
@@ -599,7 +599,7 @@ const matchDetails: ObjectType = {
       "Farah & Syazlyana",
       "Athilah & Nabilah",
       "Nov 12",
-      "Now", // 8:30 AM
+      "8:30 AM",
       "Group, Court B",
       "NA-NA",
       ""
@@ -608,7 +608,7 @@ const matchDetails: ObjectType = {
       "Nadia & Nadia",
       "Farhah & Izza",
       "Nov 12",
-      "8:50 AM",
+      "Now", // 8:50 AM
       "Group, Court B",
       "NA-NA",
       ""
