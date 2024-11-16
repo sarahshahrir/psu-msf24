@@ -445,7 +445,7 @@ const matchDetails: ObjectType = {
       "Penn State B",
       "Spartan Blues",
       "Nov 11",
-      "9:00 AM",
+      "Now", // 9:00 AM
       "Group, Court 2",
       "-",
       "",
