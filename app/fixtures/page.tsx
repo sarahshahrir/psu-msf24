@@ -160,7 +160,7 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, Court, Score, WinningTeam(1/2)]
   Basketball: [
-    ["Ben 10", "Wisconsin", "Nov 11", "8:30 AM", "Group, Court A", "-", ""],
+    ["Ben 10", "Wisconsin", "Nov 11", "Now", "Group, Court A", "-", ""], // 8:30 AM
     [
       "Penn State",
       "Santai Illini",
