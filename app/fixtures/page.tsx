@@ -48,11 +48,11 @@ const standingDetails: Group = {
     // [Team1, Teams2, Team3], ["<x-y-z>", "<x-y-z>", "<x-y-z>"]
     "Group A": [
       [
-        "Default Name",
         "NSP United",
-        "Wisconsin"
+        "Wisconsin",
+        "Default Name"
       ],
-      ["0--", "1--", "1-0-"],
+      ["1-1-", "1-0-", "0-0-"],
     ],
     "Group B": [
       ["NSP City", "PUI PUI FC", "ARBB FC"],
@@ -137,7 +137,7 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, MatchType, Results <5-4>, WinningTeam]
   Football: [
-    ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "-", ""],
+    ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "1-0", "1"],
     ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "-", ""],
     [
       "NSP United",
