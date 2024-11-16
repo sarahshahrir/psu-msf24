@@ -110,7 +110,7 @@ const standingDetails: Group = {
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
       ["Penn State", "Wisconsin", "Ben 10", "Santai Illini"],
-      ["-", "-", "-", "-"],
+      ["21-", "23-", "10-", "11-"],
     ],
     "Group B": [
       ["Bayang Muslihat", "The Nuthouse", "Asam Pedas Pollock"],
@@ -160,15 +160,15 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, Court, Score, WinningTeam(1/2)]
   Basketball: [
-    ["Ben 10", "Wisconsin", "Nov 11", "Now", "Group, Court A", "-", ""], // 8:30 AM
+    ["Ben 10", "Wisconsin", "Nov 11", "8:30 AM", "Group, Court A", "10-23", "2"],
     [
       "Penn State",
       "Santai Illini",
       "Nov 11",
       "8:30 AM",
       "Group, Court B",
-      "-",
-      "",
+      "21-11",
+      "1",
     ],
     ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "9:05 AM", "Group, Court A", "-", ""],
     [
