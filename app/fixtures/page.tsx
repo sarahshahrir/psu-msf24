@@ -241,7 +241,7 @@ const matchDetails: ObjectType = {
       "8:50 AM",
       "Group, Court A",
       "No Show-Win",
-      "1",
+      "2",
     ],
     [
       "Affiq & Adib",
