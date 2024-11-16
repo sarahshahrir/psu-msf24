@@ -572,7 +572,7 @@ const matchDetails: ObjectType = {
       "NA-NA",
       "NA-NA",
       "NA-NA",
-      "",
+      "1",
     ],
     [
       "The Nuthouse",
@@ -580,10 +580,9 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "3:00 PM",
       "Final, Court 1",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      "",
+      "15-25",
+      "16-25",
+      "2",
     ],
   ],
   "Badminton: Women's": [
