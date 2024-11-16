@@ -52,7 +52,7 @@ const standingDetails: Group = {
         "NSP United",
         "Wisconsin"
       ],
-      ["--", "--", "--"],
+      ["0--", "--", "1--"],
     ],
     "Group B": [
       ["NSP City", "ARBB FC", "PUI PUI FC"],
@@ -149,7 +149,7 @@ const matchDetails: ObjectType = {
       "",
     ],
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "-", ""],
-    ["Default Name", "Wisconsin", "Nov 16", "Now", "Group", "-", ""],
+    ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "0-1", "2"],
     ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", ""],
     ["", "", "Nov 16", "Break", "11:40 AM - 12:30 PM", "-", ""],
     ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", ""],
@@ -617,7 +617,7 @@ const matchDetails: ObjectType = {
       "Sofea & Sorfeena",
       "Dania & Angelina",
       "Nov 12",
-      "9:10 AM",
+      "Now", // 9:10 AM
       "Group, Court B",
       "NA-NA",
       ""
