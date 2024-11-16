@@ -150,7 +150,7 @@ const matchDetails: ObjectType = {
     ],
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "5-0", "1"],
     ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "0-1", "2"],
-    ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "0-1", "1"],
+    ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "0-1", "2"],
     ["", "", "Nov 16", "Break", "11:40 AM - 12:30 PM", "-", ""],
     ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", ""],
     ["TBD", "TBD", "Nov 16", "1:15 PM", "Semi Final 2", "-", ""],
