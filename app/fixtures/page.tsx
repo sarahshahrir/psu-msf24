@@ -256,7 +256,7 @@ const matchDetails: ObjectType = {
       "Adam & Izzral",
       "Khayyum & Eirfann",
       "Nov 11",
-      "9:30 AM",
+      "Now", // 9:30 AM
       "Group, Court B",
       "NA-NA",
       "",
