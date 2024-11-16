@@ -52,7 +52,7 @@ const standingDetails: Group = {
         "NSP United",
         "Wisconsin"
       ],
-      ["0--", "--", "1--"],
+      ["0--", "1--", "1-0-"],
     ],
     "Group B": [
       ["NSP City", "ARBB FC", "PUI PUI FC"],
@@ -91,10 +91,10 @@ const standingDetails: Group = {
     "Group C": [
       [
         "Affiq & Adib",
-        "Adam & Danial",
         "En. Shahrunizam & En. Khairil",
+        "Adam & Danial"
       ],
-      ["1-", "0-", "-"],
+      ["1-", "1-", "0-0"],
     ],
     "Group D": [
       [
@@ -122,7 +122,7 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       ["Athilah & Nabilah", "Sofea & Sorfeena", "Dania & Angelina", "Farah & Syazlyana"],
-      ["1-", "0-1", "1-", "0-0"],
+      ["1-1", "0-1", "1-0", "0-0"],
     ],
     "Group B": [
       ["Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah", "Farhanah & Najwa"],
@@ -145,8 +145,8 @@ const matchDetails: ObjectType = {
       "Nov 16",
       "9:40 AM",
       "Group",
-      "-",
-      "",
+      "1-0",
+      "1",
     ],
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "5-0", "1"],
     ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "0-1", "2"],
@@ -285,8 +285,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "10-30",
+      "2",
     ],
     [
       "Khayyum & Eirfann",
@@ -655,8 +655,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "10:30 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "30-12",
+      "1"
     ],
     [
       "Farhah & Izza",
