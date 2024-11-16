@@ -100,11 +100,11 @@ const standingDetails: Group = {
     ],
     "Group D": [
       [
-        "Adam & Izzral",
         "Khaiyyum & Eirfann",
         "Airil & Akmal",
+        "Adam & Izzral",
       ],
-      ["0-", "1-1", "0-"],
+      ["1-1", "0-1", "0-0"],
     ],
   },
   Basketball: {
@@ -130,7 +130,7 @@ const standingDetails: Group = {
     ],
     "Group B": [
       ["Farhanah & Najwa", "Farhah & Izza", "Fazlina & Farzanah",  "Nadia & Nadia"],
-      ["1-1-1", "1-0-", "0-1-", "0-0-0"],
+      ["1-1-1", "1-0-1", "0-1-0", "0-0-0"],
     ],
   },
 };
@@ -343,30 +343,26 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "1:10 PM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "26-30",
+      "2",
     ],
     [
-      "TBD",
-      "TBD",
+      "Danish & Jinyao",
+      "En. Hatimi & En. Yahya",
       "Nov 11",
       "1:30 PM",
       "QF 1, Court A",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      "",
+      "26-30",
+      "2",
     ], 
     [
-      "TBD",
-      "TBD",
+      "En. Syahrul & En. Eshraq",
+      "Nabil & Ralf",
       "Nov 11",
       "1:30 PM",
       "QF 2, Court B",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      "",
+      "24-30",
+      "2",
     ],
     [
       "TBD",
@@ -713,8 +709,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "1:10 PM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "30-27",
+      "1"
     ],
     [
       "TBD",
