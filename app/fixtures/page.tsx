@@ -67,7 +67,7 @@ const standingDetails: Group = {
     ],
     "Group B": [
       ["Penn State B", "Spartan Blues", "The Nuthouse", "Kedutaan dan Konsular"],
-      ["1-1", "0-", "1-0", "0-"],
+      ["1-1-0", "0-1-", "1-0-", "0-0-1"],
     ],
   },
   "Badminton: Men's": {
@@ -75,10 +75,10 @@ const standingDetails: Group = {
     "Group A": [
       [
         "Danish & Jinyao",
-        "Hadwan & Amir",
         "En. Syahrul & En. Eshraq",
+        "Hadwan & Amir",
       ],
-      ["1-1", "0-", "0-"],
+      ["1-1", "0-1", "0-0"],
     ],
     "Group B": [
       [
@@ -102,7 +102,7 @@ const standingDetails: Group = {
         "Khaiyyum & Eirfann",
         "Airil & Akmal",
       ],
-      ["0-", "1-", "-"],
+      ["0-", "1-1", "0-"],
     ],
   },
   Basketball: {
@@ -110,11 +110,11 @@ const standingDetails: Group = {
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
       ["Wisconsin", "Penn State", "Santai Illini", "Ben 10"],
-      ["1-0", "1-0", "0-1", "0-0"], // Ben 10 Santai Illini 6-6
+      ["1-1-0", "1-0-1", "0-0-1", "0-0-0"], // Ben 10 Santai Illini 6-6
     ],
     "Group B": [
-      ["The Nuthouse", "Bayang Muslihat", "Asam Pedas Pollock"],
-      ["1-1", "0-0", "1-0"],
+      ["The Nuthouse", "Asam Pedas Pollock", "Bayang Muslihat"],
+      ["1-1", "1-0", "0-0"],
     ],
   },
   "Badminton: Women's": {
@@ -122,11 +122,11 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       ["Athilah & Nabilah", "Sofea & Sorfeena", "Dania & Angelina", "Farah & Syazlyana"],
-      ["1-1", "0-1", "1-0", "0-0"],
+      ["1-1-", "0-1-", "1-0-0", "0-0-0"],
     ],
     "Group B": [
-      ["Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah", "Farhanah & Najwa"],
-      ["0-", "1-", "0-", "1-"],
+      ["Farhanah & Najwa", "Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah"],
+      ["1-1", "0-0", "1-0", "0-1"],
     ],
   },
 };
@@ -214,8 +214,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:40 AM",
       "Group, Court A",
-      "-",
-      "",
+      "37-16",
+      "1",
     ],
     ["", "", "Nov 11", "Break", "11:05 AM - 11:25 AM", "-", ""],
     ["TBD", "TBD", "Nov 11", "11:25 AM", "Semi 1, Court A", "-", ""],
@@ -294,8 +294,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:50 AM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "30-19",
+      "1",
     ],
     [
       "Hadwan & Amir",
@@ -303,8 +303,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:10 AM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "19-30",
+      "1",
     ],
     [
       "",
@@ -501,8 +501,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 2",
-      "NA-NA",
-      "",
+      "25-17",
+      "1",
     ],
     [
       "Penn State C",
@@ -519,8 +519,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "11:00 AM",
       "Group, Court 2",
-      "NA-NA",
-      "",
+      "22-25",
+      "2",
     ],
     [
       "Cendol VB",
@@ -646,8 +646,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "10:10 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "18-30",
+      "2"
     ],
     [
       "Athliah & Nabilah",
@@ -664,8 +664,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "10:50 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "19-30",
+      "2"
     ],
     [
       "Farah & Syazlyana",
@@ -673,8 +673,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "11:10 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "15-30",
+      "2"
     ],
     [
       "",
