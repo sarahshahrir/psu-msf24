@@ -62,8 +62,8 @@ const standingDetails: Group = {
   Volleyball: {
     // every array represent a group and its point or score
     "Group A": [
-      ["Penn State C", "Cendol VB", "Denmarks National Mixed", "Free Agent"],
-      ["0-", "1-", "0-", "1-"],
+      ["Cendol VB", "Penn State C", "Denmarks National Mixed", "Free Agent"],
+      ["1-1", "0-", "0-", "1-0"],
     ],
     "Group B": [
       ["Penn State B", "Spartan Blues", "The Nuthouse", "Kedutaan dan Konsular"],
@@ -110,7 +110,7 @@ const standingDetails: Group = {
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
       ["Wisconsin", "Penn State", "Ben 10", "Santai Illini"],
-      ["1-1", "1-0", "0-", "0-"], // Ben 10 Santai Illini 6-6
+      ["1-1", "1-0", "0-0", "0-0"], // Ben 10 Santai Illini 6-6
     ],
     "Group B": [
       ["Bayang Muslihat", "The Nuthouse", "Asam Pedas Pollock"],
@@ -196,8 +196,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:05 AM",
       "Group, Court 5",
-      "-",
-      "",
+      "21-23",
+      "2",
     ],
     [
       "Bayang Muslihat",
@@ -326,7 +326,7 @@ const matchDetails: ObjectType = {
     ],
     [
       "Affiq & Adib",
-      "Shaharunizam, & Khairil",
+      "Shaharuniza, & Khairil",
       "Nov 11",
       "12:50 PM",
       "Group, Court A",
@@ -474,8 +474,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 1",
-      "NA-NA",
-      "",
+      "25-6",
+      "1",
     ],
     [
       "Penn State B",
@@ -492,8 +492,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:30 AM",
       "Group, Court 1",
-      "NA-NA",
-      "",
+      "25-6",
+      "1",
     ],
     [
       "Spartan Blues",
