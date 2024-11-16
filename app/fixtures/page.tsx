@@ -82,11 +82,11 @@ const standingDetails: Group = {
     ],
     "Group B": [
       [
-        "Izzul & Jason",
         "Nabil & Ralf",
+        "Izzul & Jason",
         "En. Hatmi & En. Yahya",
       ],
-      ["0-", "1-", "-"],
+      ["1-1", "0-", "0-"],
     ],
     "Group C": [
       [
@@ -121,8 +121,8 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     // every array represent a group and its point or score
     "Group A": [
-      ["Farah & Syazlyana", "Athilah & Nabilah", "Sofea & Sorfeena", "Dania & Angelina"],
-      ["0-", "1-", "0-", "1-"],
+      ["Athilah & Nabilah", "Sofea & Sorfeena", "Dania & Angelina", "Farah & Syazlyana"],
+      ["1-", "0-1", "1-", "0-0"],
     ],
     "Group B": [
       ["Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah", "Farhanah & Najwa"],
@@ -276,8 +276,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:10 AM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "30-27",
+      "1",
     ],
     [
       "Adam & Danial",
@@ -637,8 +637,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "9:50 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "11-30",
+      "2"
     ],
     [
       "Nadia & Nadia",
