@@ -52,11 +52,13 @@ const standingDetails: Group = {
         "Wisconsin",
         "Default Name"
       ],
-      ["1-1-", "1-0-", "0-0-"],
+      // ["3-3-", "3-0-", "0-0-"],
+      ["6", "3", "0"],
     ],
     "Group B": [
       ["NSP City", "PUI PUI FC", "ARBB FC"],
-      ["1--", "1--", "0-0-"],
+      // ["3-1-", "3-1-", "0-0-"],
+      ["4", "4", "0"],
     ],
   },
   Volleyball: {
@@ -83,18 +85,18 @@ const standingDetails: Group = {
     "Group B": [
       [
         "Nabil & Ralf",
-        "Izzul & Jason",
         "En. Hatmi & En. Yahya",
+        "Izzul & Jason",
       ],
-      ["1-1", "0-", "0-"],
+      ["1-1", "0-1", "0-0"],
     ],
     "Group C": [
       [
-        "Affiq & Adib",
         "Shahrunizam & Khairil",
+        "Affiq & Vincent",
         "Adam & Danial"
       ],
-      ["1-", "1-", "0-0"],
+      ["1-1", "1-0", "0-0"],
     ],
     "Group D": [
       [
@@ -110,11 +112,13 @@ const standingDetails: Group = {
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
       ["Wisconsin", "Penn State", "Santai Illini", "Ben 10"],
-      ["1-1-0", "1-0-1", "0-0-1", "0-0-0"], // Ben 10 Santai Illini 6-6
+      // ["1-1-0", "1-0-1", "0-0-1", "0-0-0"], // Ben 10 Santai Illini 6-6
+      ["", "", "", ""],
     ],
     "Group B": [
       ["The Nuthouse", "Asam Pedas Pollock", "Bayang Muslihat"],
-      ["1-1", "1-0", "0-0"],
+      // ["1-1", "1-0", "0-0"],
+      ["", "", ""],
     ],
   },
   "Badminton: Women's": {
@@ -122,11 +126,11 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       ["Athilah & Nabilah", "Sofea & Sorfeena", "Dania & Angelina", "Farah & Syazlyana"],
-      ["1-1-", "0-1-", "1-0-0", "0-0-0"],
+      ["1-1-1", "0-1-0", "1-0-0", "0-0-0"],
     ],
     "Group B": [
-      ["Farhanah & Najwa", "Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah"],
-      ["1-1-", "0-0-", "1-0-", "0-1-"],
+      ["Farhanah & Najwa", "Farhah & Izza", "Fazlina & Farzanah",  "Nadia & Nadia"],
+      ["1-1-1", "1-0-", "0-1-", "0-0-0"],
     ],
   },
 };
@@ -136,9 +140,9 @@ const matchDetails: ObjectType = {
   // After score is who won, 0 is draw, 1 is team1, 2 is team2
 
   // [Team1, Team2, Date, Time, MatchType, Results <5-4>, WinningTeam]
-  Football: [
+  Football: [ // Menang 3, Seri 1, Kalah 0
     ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "1-0", "1"],
-    ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "-", ""],
+    ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "1-1", ""],
     [
       "NSP United",
       "Wisconsin",
@@ -196,8 +200,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:05 AM",
       "Group, Court 5",
-      "23-21",
-      "1",
+      "21-23",
+      "2",
     ],
     [
       "Bayang Muslihat",
@@ -317,21 +321,21 @@ const matchDetails: ObjectType = {
     ],
     [
       "Izzul & Jason",
-      "En. Hatmi & En. Yahya",
+      "En. Hatimi & En. Yahya",
       "Nov 11",
       "12:30 PM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "8-30",
+      "2",
     ],
     [
-      "Affiq & Adib",
-      "Shaharuniza, & Khairil",
+      "Affiq & Vincent",
+      "Shaharunizam, & Khairil",
       "Nov 11",
       "12:50 PM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "29-30",
+      "2",
     ],
     [
       "Adam & Izzral",
@@ -550,8 +554,8 @@ const matchDetails: ObjectType = {
       "",
     ],
     [
-      "TBD",
-      "TBD",
+      "Cendol VB",
+      "The Nuthouse",
       "Nov 11",
       "1:00 PM",
       "Semi 1, Court 1",
@@ -561,8 +565,8 @@ const matchDetails: ObjectType = {
       "",
     ],
     [
-      "TBD",
-      "TBD",
+      "Penn State B",
+      "Penn State C",
       "Nov 11",
       "2:00 PM",
       "Semi 2, Court 1",
@@ -691,8 +695,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "12:30 PM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "19-30",
+      "2"
     ],
     [
       "Athilah & Nabilah",
@@ -700,8 +704,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "12:50 PM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "30-21",
+      "1"
     ],
     [
       "Farhah & Izza",
