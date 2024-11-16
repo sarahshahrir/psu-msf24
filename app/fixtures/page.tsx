@@ -109,12 +109,12 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
-      ["Wisconsin", "Penn State", "Ben 10", "Santai Illini"],
-      ["1-1", "1-0", "0-0", "0-0"], // Ben 10 Santai Illini 6-6
+      ["Wisconsin", "Penn State", "Santai Illini", "Ben 10"],
+      ["1-0", "1-0", "0-1", "0-0"], // Ben 10 Santai Illini 6-6
     ],
     "Group B": [
-      ["Bayang Muslihat", "The Nuthouse", "Asam Pedas Pollock"],
-      ["0-", "1-", "1-0"],
+      ["The Nuthouse", "Bayang Muslihat", "Asam Pedas Pollock"],
+      ["1-1", "0-0", "1-0"],
     ],
   },
   "Badminton: Women's": {
@@ -196,8 +196,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:05 AM",
       "Group, Court 5",
-      "21-23",
-      "2",
+      "23-21",
+      "1",
     ],
     [
       "Bayang Muslihat",
@@ -205,8 +205,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:05 AM",
       "Group, Court B",
-      "-",
-      "",
+      "2-26",
+      "2",
     ],
     [
       "Penn State",
