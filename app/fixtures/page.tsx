@@ -601,8 +601,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "8:30 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "5-30",
+      "2"
     ],
     [
       "Nadia & Nadia",
