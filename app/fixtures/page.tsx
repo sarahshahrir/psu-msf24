@@ -137,7 +137,7 @@ const matchDetails: ObjectType = {
 
   // [Team1, Team2, Date, Time, MatchType, Results <5-4>, WinningTeam]
   Football: [
-    ["NSP United", "Default Name", "Nov 16", "Now", "Group", "-", ""], // 8.30 AM
+    ["NSP United", "Default Name", "Nov 16", "8:30 AM", "Group", "-", ""],
     ["NSP City", "PUI PUI FC", "Nov 16", "9:05 AM", "Group", "-", ""],
     [
       "NSP United",
@@ -149,7 +149,7 @@ const matchDetails: ObjectType = {
       "",
     ],
     ["NSP City", "ARBB FC", "Nov 16", "10:05 AM", "Group", "-", ""],
-    ["Default Name", "Wisconsin", "Nov 16", "10:40 AM", "Group", "-", ""],
+    ["Default Name", "Wisconsin", "Nov 16", "Now", "Group", "-", ""],
     ["ARBB FC", "PUI PUI FC", "Nov 16", "11:05 AM", "Group", "-", ""],
     ["", "", "Nov 16", "Break", "11:40 AM - 12:30 PM", "-", ""],
     ["TBD", "TBD", "Nov 16", "12:30 PM", "Semi Final 1", "-", ""],
