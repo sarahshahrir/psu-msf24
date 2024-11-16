@@ -101,14 +101,14 @@ export const badmintonMData: Match[] = [
         resultText: "",
         isWinner: false,
         status: "PLAYED",
-        name: "TBD",
+        name: "En. Shahrunizam & En. Khairil",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
         resultText: "",
         isWinner: true,
         status: "PLAYED",
-        name: "TBD",
+        name: "Affiq & Vincent",
       },
     ],
   },
@@ -276,14 +276,14 @@ export const badmintonWData: Match[] = [
     participants: [
       {
         id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
-        resultText: "",
-        isWinner: true,
+        resultText: "Lose",
+        isWinner: false,
         status: "PLAYED",
         name: "Dania & Angelina",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "",
+        resultText: "Win",
         isWinner: true,
         status: "PLAYED",
         name: "Farhanah & Najwa",
@@ -304,14 +304,14 @@ export const basketballData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "",
-        isWinner: true,
+        resultText: "24",
+        isWinner: false,
         status: null,
         name: "Wisconsin",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
-        resultText: "",
+        resultText: "41",
         isWinner: true,
         status: null,
         name: "The Nuthouse",

@@ -226,7 +226,7 @@ const matchDetails: ObjectType = {
     ["The Nuthouse", "Penn State", "Nov 11", "11:25 AM", "Semi 2, Court B", "29-18", "1"],
     ["", "", "Nov 11", "Break", "12:10 PM - 1:00 PM", "-", ""],
     ["Asam Pedas Pollock", "Penn State", "Nov 11", "1:00 PM", "3rd & 4th, Court A", "-", ""],
-    ["Wisconsin", "The Nuthouse", "Nov 11", "1:55 PM", "Final, Court A", "-", ""],
+    ["Wisconsin", "The Nuthouse", "Nov 11", "1:55 PM", "Final, Court A", "24-41", "2"],
   ],
   "Badminton: Men's": [
     [
@@ -393,15 +393,14 @@ const matchDetails: ObjectType = {
       "2",
     ],
     [
-      "TBD",
-      "TBD",
+      "En. Shahrunizam & En. Khairil",
+      "Affiq & Vincent",
       "Nov 11",
       "3:00 PM",
       "Semi 2, Court A",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      "",
+      "13-21",
+      "14-21",
+      "2",
     ],
     [
       "TBD",
@@ -718,15 +717,14 @@ const matchDetails: ObjectType = {
       "1"
     ],
     [
-      "TBD",
-      "TBD",
+      "Dania & Angelina",
+      "Farhanah & Najwa",
       "Nov 12",
       "3:00 PM",
       "Semi 2, Court B",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      ""
+      "9-21",
+      "14-21",
+      "2"
     ],
     [
       "TBD",
