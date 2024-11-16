@@ -51,7 +51,7 @@ export const badmintonMData: Match[] = [
         resultText: "",
         isWinner: true,
         status: null,
-        name: "TBD",
+        name: "Nabil & Ralf",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
@@ -73,14 +73,14 @@ export const badmintonMData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "",
-        isWinner: true,
+        resultText: "Lose",
+        isWinner: false,
         status: "PLAYED",
         name: "En. Hatimi & En. Yahya",
       },
       {
         id: "9c92feb3-4aa4-4475-a34e-f9a200e21aa9",
-        resultText: "",
+        resultText: "Win",
         isWinner: true,
         status: "PLAYED",
         name: "Nabil & Ralf",
@@ -229,7 +229,7 @@ export const badmintonWData: Match[] = [
         resultText: "",
         isWinner: true,
         status: null,
-        name: "",
+        name: "Athilah & Nabilah",
       },
       {
         id: "9ea9ce1a-4794-4553-856c-9a3620c0531b",
@@ -251,15 +251,15 @@ export const badmintonWData: Match[] = [
     participants: [
       {
         id: "c016cb2a-fdd9-4c40-a81f-0cc6bdf4b9cc",
-        resultText: "",
+        resultText: "Win",
         isWinner: true,
         status: "PLAYED",
         name: "Athilah & Nabilah",
       },
       {
         id: "008de019-4af6-4178-a042-936c33fea3e9",
-        resultText: "",
-        isWinner: true,
+        resultText: "Lose",
+        isWinner: false,
         status: "PLAYED",
         name: "Farhah & Izza",
       },

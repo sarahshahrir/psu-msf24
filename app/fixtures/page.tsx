@@ -383,15 +383,14 @@ const matchDetails: ObjectType = {
       "1",
     ],
     [
-      "TBD",
-      "TBD",
+      "Danish & Jinyao",
+      "Nabil & Ralf",
       "Nov 11",
       "2:30 PM",
       "Semi 1, Court A",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      "",
+      "16-21",
+      "9-21",
+      "2",
     ],
     [
       "TBD",
@@ -416,7 +415,7 @@ const matchDetails: ObjectType = {
       "",
     ],
     [
-      "TBD",
+      "Nabil & Ralf",
       "TBD",
       "Nov 11",
       "4:00 PM",
@@ -709,15 +708,14 @@ const matchDetails: ObjectType = {
       "1"
     ],
     [
-      "TBD",
-      "TBD",
+      "Athilah & Nabilah",
+      "Farhah & Izza",
       "Nov 12",
       "2:30 PM",
       "Semi 1, Court B",
-      "NA-NA",
-      "NA-NA",
-      "NA-NA",
-      ""
+      "21-15",
+      "21-4",
+      "1"
     ],
     [
       "TBD",
