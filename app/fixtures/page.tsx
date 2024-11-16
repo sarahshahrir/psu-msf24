@@ -78,7 +78,7 @@ const standingDetails: Group = {
         "Danish & Jinyao",
         "En. Syahrul & En. Eshraq",
       ],
-      ["0-", "1-", "-"],
+      ["0-", "1-1", "0-"],
     ],
     "Group B": [
       [
@@ -126,7 +126,7 @@ const standingDetails: Group = {
     ],
     "Group B": [
       ["Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah", "Farhanah & Najwa"],
-      ["0-", "1-", "-", "-"],
+      ["0-", "1-", "0-", "1-"],
     ],
   },
 };
@@ -170,14 +170,14 @@ const matchDetails: ObjectType = {
       "21-11",
       "1",
     ],
-    ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "9:05 AM", "Group, Court A", "3-14", "2"],
+    ["Bayang Muslihat", "Asam Pedas Pollock", "Nov 11", "9:05 AM", "Group, Court A", "6-18", "2"],
     [
       "Santai Illini",
       "Ben 10",
       "Nov 11",
       "9:05 AM",
       "Group, Court B",
-      "6-6",
+      "17-17", // TIE!!
       "",
     ],
     ["Penn State", "Wisconsin", "Nov 11", "9:40 AM", "Group, Court A", "-", ""],
@@ -267,8 +267,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:50 AM",
       "Group, Court A",
-      "NA-NA",
-      "",
+      "30-27",
+      "1",
     ],
     [
       "Nabil & Ralf",
@@ -438,8 +438,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 1",
-      "-",
-      "",
+      "20-25",
+      "2",
     ],
     [
       "Penn State B",
@@ -447,7 +447,7 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:00 AM",
       "Group, Court 2",
-      "25-18",
+      "25-17",
       "1",
     ],
     [
@@ -456,8 +456,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:30 AM",
       "Group, Court 1",
-      "NA-NA",
-      "",
+      "17-25",
+      "2",
     ],
     [
       "The Nuthouse",
@@ -628,8 +628,8 @@ const matchDetails: ObjectType = {
       "Nov 12",
       "9:30 AM",
       "Group, Court B",
-      "NA-NA",
-      ""
+      "15-30",
+      "2"
     ],
     [
       "Farah & Syazlyana",
