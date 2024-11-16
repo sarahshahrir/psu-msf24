@@ -67,7 +67,7 @@ const standingDetails: Group = {
     ],
     "Group B": [
       ["Penn State B", "Spartan Blues", "The Nuthouse", "Kedutaan dan Konsular"],
-      ["25-", "18-", "-", "-"],
+      ["1-", "0-", "-", "-"],
     ],
   },
   "Badminton: Men's": {
@@ -78,7 +78,7 @@ const standingDetails: Group = {
         "Danish & Jinyao",
         "En. Syahrul & En. Eshraq",
       ],
-      ["-", "-", "-"],
+      ["0-", "1-", "-"],
     ],
     "Group B": [
       [
@@ -86,7 +86,7 @@ const standingDetails: Group = {
         "Nabil & Ralf",
         "En. Hatmi & En. Yahya",
       ],
-      ["-", "-", "-"],
+      ["0-", "1-", "-"],
     ],
     "Group C": [
       [
@@ -94,7 +94,7 @@ const standingDetails: Group = {
         "Adam & Danial",
         "En. Shahrunizam & En. Khairil",
       ],
-      ["-", "-", "-"],
+      ["1-", "0-", "-"],
     ],
     "Group D": [
       [
@@ -102,7 +102,7 @@ const standingDetails: Group = {
         "Khaiyyum & Eirfann",
         "Airil & Akmal",
       ],
-      ["21-", "30-", "-"],
+      ["0-", "1-", "-"],
     ],
   },
   Basketball: {
@@ -110,11 +110,11 @@ const standingDetails: Group = {
     // [Team1, Team2, Team3], ["x-y", "x-y", "x-y"]
     "Group A": [
       ["Penn State", "Wisconsin", "Ben 10", "Santai Illini"],
-      ["21-", "23-", "10-6", "11-6"],
+      ["1-", "1-", "0-", "0-"], // Ben 10 Santai Illini 6-6
     ],
     "Group B": [
       ["Bayang Muslihat", "The Nuthouse", "Asam Pedas Pollock"],
-      ["3-", "-", "14-"],
+      ["0-", "-", "1-"],
     ],
   },
   "Badminton: Women's": {
@@ -122,11 +122,11 @@ const standingDetails: Group = {
     // every array represent a group and its point or score
     "Group A": [
       ["Farah & Syazlyana", "Athilah & Nabilah", "Sofea & Sorfeena", "Dania & Angelina"],
-      ["5-", "30-", "29-", "30-"],
+      ["0-", "1-", "0-", "1-"],
     ],
     "Group B": [
       ["Nadia & Nadia", "Farhah & Izza", "Fazlina & Farzanah", "Farhanah & Najwa"],
-      ["25-", "30-", "-", "-"],
+      ["0-", "1-", "-", "-"],
     ],
   },
 };
