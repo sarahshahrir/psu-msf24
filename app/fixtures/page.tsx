@@ -67,7 +67,7 @@ const standingDetails: Group = {
     ],
     "Group B": [
       ["Penn State B", "Spartan Blues", "The Nuthouse", "Kedutaan dan Konsular"],
-      ["1-", "0-", "-", "-"],
+      ["1-1", "0-", "1-0", "0-"],
     ],
   },
   "Badminton: Men's": {
@@ -465,8 +465,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "9:30 AM",
       "Group, Court 2",
-      "NA-NA",
-      "",
+      "25-22",
+      "1",
     ],
     [
       "Penn State C",
@@ -483,8 +483,8 @@ const matchDetails: ObjectType = {
       "Nov 11",
       "10:00 AM",
       "Group, Court 2",
-      "NA-NA",
-      "",
+      "25-19",
+      "1",
     ],
     [
       "Cendol VB",
