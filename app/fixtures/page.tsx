@@ -599,7 +599,7 @@ const matchDetails: ObjectType = {
       "Farah & Syazlyana",
       "Athilah & Nabilah",
       "Nov 12",
-      "8:30 AM",
+      "Now", // 8:30 AM
       "Group, Court B",
       "NA-NA",
       ""
